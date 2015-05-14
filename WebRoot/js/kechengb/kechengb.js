@@ -149,6 +149,11 @@ function zengjiadiv()
         }
     });
 }
+//删除教室,星期,课时DIV
+function shanchupaike(obj)
+{
+    $(obj).parent().parent().remove();
+}
 //保存排课按钮点击事件
 function baocunpaike()
 {

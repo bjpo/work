@@ -28,11 +28,11 @@
 </style>
 <jsp:include page="../common/include.jsp"></jsp:include>
 </head>
-<body class="easyui-layout"> 
+<body class="easyui-layout">
 
 	<script type="text/javascript"
 		src="<%=basePath%>js/kechengb/kechengb.js"></script>
-		
+
 			<div data-options="region:'west',title:'菜单',split:true" style="width:15%;">
 			<ul id="qxmenu" style="text-align:center">
 				<span class="tree-icon tree-file "></span>
@@ -103,13 +103,13 @@
 
 
 	</div>
-                        
+
                         <!--新版新增信息对话框 开始--->
                         <input id="basePath" type="hidden" value="<%=basePath%>">
-                        <div id="addKECHENGB_dlg1" buttons="#addKECHENGB_dlg-buttons1" title="新增信息" class="easyui-dialog" style="width: 675px;height: 375px" closed="true" modal="true" draggable="true" resizable="true">
+                        <div id="addKECHENGB_dlg1" buttons="#addKECHENGB_dlg-buttons1" title="新增信息" class="easyui-dialog" style="width: 700px;height: 425px" closed="true" modal="true">
                             <form id="addKECHENGB_form1" method="post">
                                 <div>
-                                    <div style="float: left;width: 32%;text-align: right" class="title">
+                                    <div style="float: left;width: 29%;text-align: right" class="title">
                                         <label>排课学期:</label>
                                         <input class="easyui-combobox easyui-validatebox" id="XUEQI" name="XUEQI"
                                                data-options="valueField:'XQ_ID',textField:'XQMC',url:'listAllXUEQI.action',required:true,missingMessage:'请选择排课学期',onSelect:function(){
@@ -126,42 +126,46 @@
                                                });
                                                }" style="width:70%;" />
                                     </div>
-                                    <div style="float: left;width: 32%;text-align: right" class="title">
+                                    <div style="float: left;width: 29%;text-align: right" class="title">
                                         <input type="hidden" name="KCB_ID" ID="KCB_ID" />
                                         <label>任课教师:</label>
                                         <input class="easyui-combobox easyui-validatebox" id="LAOSHIGH" style="width:70%;" name="LAOSHIGH" data-options="valueField:'JG_ID',textField:'JGMC',required:true,missingMessage:'请选择任课教师',url:'<%=basePath%>listAllJIAOGONG.action'"/>
                                     </div>
-                                    <div style="float: left;width: 32%;text-align: right" class="title">
+                                    <div style="float: left;width: 29%;text-align: right" class="title">
                                         <label>课程名称:</label>
                                         <input class="easyui-combobox easyui-validatebox" id="KCXXMC" style="width:70%;" name="KCXXMC" data-options="valueField:'KECHENGXX_ID',textField:'KECHENGMC',required:true,missingMessage:'请选择课程名称',url:'<%=basePath%>listAllKECHENGXX.action'"/>
                                     </div>
                                 </div>
                                 <div>
-                                    <div style="float: left;width: 32%;text-align: right" class="title">
+                                    <div style="float: left;width: 29%;text-align: right" class="title">
                                         <label>开始周:</label>
                                         <input class="easyui-combobox easyui-validatebox" id="KSZHOU" style="width:70%;" name="KSZHOU" data-options="valueField:'jiaoxuezhou',textField:'jiaoxuezhou',required:true,missingMessage:'请选择课程开始周',url:'<%=basePath%>js/jiaoxuezhou.json'"/>
                                     </div>
-                                    <div style="float: left;width: 32%;text-align: right" class="title">
+                                    <div style="float: left;width: 29%;text-align: right" class="title">
                                         <label>结束周:</label>
                                         <input class="easyui-combobox easyui-validatebox" id="JSZHOU" style="width:70%;" name="JSZHOU" data-options="valueField:'jiaoxuezhou',textField:'jiaoxuezhou',required:true,missingMessage:'请选择课程结束周',url:'<%=basePath%>js/jiaoxuezhou.json'"/>
                                     </div>
-                                    <div style="float: left;width: 32%;text-align: right" class="title">
+                                    <div style="float: left;width: 29%;text-align: right" class="title">
                                         <label>课程类别:</label>
                                         <input class="easyui-combobox easyui-validatebox" id="KCBLB" style="width:70%;" name="KCBLB" data-options="valueField:'kcblb',textField:'kcblb',required:true,missingMessage:'请选择课程类别',url:'<%=basePath%>js/kechengbiaoleibie.json'"/>
                                     </div>
                                 </div>
                                 <div>
-                                    <div style="float: left;width: 32%;text-align: right" class="title">
+                                    <div style="float: left;width: 29%;text-align: right" class="title">
                                         <label>课程人数:</label>
                                         <input type="text" id="maxrs" name="maxrs" style="width:70%;"/>
                                     </div>
-                                    <div id="skbj" style="float: left;width: 32%;text-align: right" class="title">
+                                    <div id="skbj" style="float: left;width: 29%;text-align: right" class="title">
                                         <label>上课班级:</label>
                                         <input class="easyui-combobox" id="SKBJ" style="width:70%;" name="SKBJ" multiple="true" data-options="valueField:'BJ_ID',textField:'BJMC',url:'<%=basePath%>listAllBANJI.action'" />
                                     </div>
-                                </div>  
-                                <div id="cleardiv" style="clear: both"></div>
-                                <div id="flagdiv"></div>
+                                </div>
+                                <div id="cleardiv" style="clear: both;border-style: none none none solid;border-width: 670px;border-color: #277ebc;"></div>
+                                <div id="flagdiv">
+                                    <p style="padding-top: 25%">1:请依次选择排课学期,任课教师,课程名称,开始周,结束周,课程类别,上课班级,教室,星期,课时.上述选项为必选项.</p>
+                                    <p>2:课程人数为可选项.</p>
+                                    <p>3:当课程类别为公共选修课或开放性课程时,不必选择上课班级.</p>
+                                </div>
                             </form>
                         </div>
                         <div id="addKECHENGB_dlg-buttons1" style="height: 23px">
@@ -171,28 +175,31 @@
                         </div>
                         <div id="copydiv" style="display: none">
                             <div class="copy">
-                                <div style="float: left;width: 32%;text-align: right" class="title">
+                                <div style="float: left;width: 29%;text-align: right;" class="title">
                                     <label>教室:</label>
                                     <select style="width:70%;height: 22px" name="JS_ID">
                                         <option>请选择</option>
                                     </select>
                                 </div>
-                                <div style="float: left;width: 32%;text-align: right" class="title">
-                                    <label>星期:</label> 
+                                <div style="float: left;width: 29%;text-align: right" class="title">
+                                    <label>星期:</label>
                                     <select style="width:70%;height: 22px" name="XINGQI">
                                         <option>请选择</option>
                                     </select>
                                 </div>
-                                <div style="float: left;width: 32%;text-align: right" class="title">
-                                    <label>课时:</label> 
+                                <div style="float: left;width: 29%;text-align: right" class="title">
+                                    <label>课时:</label>
                                     <select style="width:70%;height: 22px" name="KS_ID">
                                         <option>请选择</option>
                                     </select>
                                 </div>
+                                <div style="float: left;width: 10%;text-align: left" class="title">
+                                    <a class="easyui-linkbutton" iconCls="icon-clear" style="height: 22px;" onclick="shanchupaike(this)">删除</a>
+                                </div>
                             </div>
                         </div>
-                        <!--新版新增信息对话框 结束--->  
-                        
+                        <!--新版新增信息对话框 结束--->
+
 	<!-- 新增对话框  BEGIN-->
 <!--	<div id="addKECHENGB_dlg" class="easyui-dialog"
 		style="width:400px;height:250px;padding:10px 20px" closed="true"
@@ -201,7 +208,7 @@
 			<div id="addkcb_step1">
 			<table>
 				<tr>
-					选择排课的学期 
+					选择排课的学期
 					<td class="title"><label>请选择排课的学期:</label></td>
 					<td><input
 						class="easyui-combobox easyui-validatebox" id="XUEQI" name="XUEQI"
@@ -215,12 +222,12 @@
 					 					$.messager.alert('提示',obj2.message);
 					 						$('#XUEQI').combobox('setValue','');
 					 					}
-					 					
+
 					  							return ;
 					 						}
 										});
 									}" style="width:150px;" /></td>
-					
+
 				</tr>
 				<tr>
 					<td class="title"><input type="hidden" name="KCB_ID" ID="KCB_ID" /> <label>请选择任课教师:</label></td>
@@ -254,13 +261,13 @@
 					</tr>
 					<tr>
 						<td class="title"><label>课程表类别:</label></td>
-						 
+
 						<td><input class="easyui-combobox" id="KCBLB" name="KCBLB"
 							data-options="valueField:'kcblb',textField:'kcblb',url:'<%=basePath%>js/kechengbiaoleibie.json'" /></td>
-							
+
 							 <td><input id="KCBLB" name="KCBLB"/></td>
 					</tr>
-					  
+
 					<tr id="skbj">
 						<td class="title"><label>上课班级:</label></td>
 						<td><input class="easyui-combobox" id="SKBJ" name="SKBJ"
@@ -381,9 +388,9 @@
 	</div>
 	<!-- 查看/修改对话框  END-->
 		</div>
-		
-		
-	
+
+
+
 </body>
 </html>
 
