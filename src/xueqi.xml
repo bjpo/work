@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="xueqiPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listXUEQI" class="xueqiaction" method="listXUEQI">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllXUEQI" class="xueqiaction" method="listAllXUEQI">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllXUEQIforKCB" class="xueqiaction" method="listAllXUEQIforKCB">
+		</action>
+		<!-- 新增 -->
+		<action name="addXUEQI" class="xueqiaction" method="addXUEQI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateXUEQI" class="xueqiaction" method="updateXUEQI">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delXUEQI" class="xueqiaction" method="delXUEQI">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

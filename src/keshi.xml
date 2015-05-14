@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="keshiPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listKESHI" class="keshiaction" method="listKESHI">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllKESHI" class="keshiaction" method="listAllKESHI">
+		</action>
+		<!-- 新增 -->
+		<action name="addKESHI" class="keshiaction" method="addKESHI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateKESHI" class="keshiaction" method="updateKESHI">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delKESHI" class="keshiaction" method="delKESHI">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

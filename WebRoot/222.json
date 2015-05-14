@@ -1,0 +1,7 @@
+[
+{"attributes":{"url":"listYHZ"},"childs":[{"attributes":{"url":"listYHZ"},"childs":[],"id":"d560f1d9-3c9d-4c2e-95fd-fbb103a3c220","text":"用户组管理"},
+{"attributes":{"url":"listYHZ"},"childs":[],"id":"d560f1d9-3c9d-4c2e-95fd-fbb103a3c220","text":"用户组管理"},
+{"attributes":{"url":"listYHZ"},"childs":[],"id":"d560f1d9-3c9d-4c2e-95fd-fbb103a3c220","text":"用户组管理"}],"id":"d560f1d9-3c9d-4c2e-95fd-fbb103a3c220","text":"用户组管理"},
+{"attributes":{"url":"addYHZ"},"childs":[],"id":"5b009dd4-c915-4172-bdbd-bb528a3870e6","text":"用户组管理-新增"},
+{"attributes":{"url":"updateYHZ"},"childs":[],"id":"5171679f-e660-45fa-b6d6-19cd271acdc1","text":"用户组管理-修改"},
+{"attributes":{"url":"delYHZ"},"childs":[],"id":"eabb14f4-ee16-46ff-8c39-64ccce5e5a04","text":"用户组管理-删除"}]

@@ -1,0 +1,37 @@
+.a {
+    width: 230px;
+    height: 100px;
+    border: 1px solid #99bbee;
+    overflow: scroll;
+    overflow-x: hidden;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+.btn {
+    width: 80px;
+    height: 25px;
+    margin: 5px 0;
+}
+
+#zwlrTitle {
+    font-size: 24px;
+}
+
+.wbk {
+    width: 200px;
+    height: 190px;
+    border: 1px solid #99bbee;
+    float: right;
+    margin-top: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.abtn:hover {
+    color: #f00;
+}
+
+from {
+    margin: 10px 0;
+}

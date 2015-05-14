@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="StudentPkg" extends="login-jsondefault">
+		<action name="listStudent" class="studentaction" method="listStudent">
+		</action>
+		<action name="listAllXUESHENG" class="studentaction" method="listAllXUESHENG">
+		</action>
+		<action name="addStudent" class="studentaction" method="addStudent">
+			<param name="savePath">D://KQData</param>
+		</action>
+		<action name="findStudent" class="studentaction" method="findStudent">
+			<param name="savePath">D://KQData</param>
+		</action>
+		<action name="changePic" class="studentaction" method="changePic">
+		</action>
+		<action name="updateStudent" class="studentaction" method="updateStudent">
+			<param name="savePath">D://KQData</param>
+		</action>
+		<action name="delStudent" class="studentaction" method="delStudent">
+			<param name="savePath">D://KQData</param>
+		</action>
+	</package>
+</struts>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="RoomPkg" extends="login-jsondefault">
+		<action name="listFJ" class="fjaction" method="listFJ">
+		</action>
+		<action name="listAllFJ" class="fjaction" method="listAllFJ">
+		</action>
+		<action name="listJXLforFJ" class="fjaction" method="listJXLforFJ">
+		</action>
+		<action name="addFJ" class="fjaction" method="addFJ">
+		</action>
+		<action name="updateFJ" class="fjaction" method="updateFJ">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="delFJ" class="fjaction" method="delFJ">
+		</action>
+	</package>
+</struts>

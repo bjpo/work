@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="tongjiPackage" extends="login-jsondefault">
+		<!--统计全校1-->
+		
+		<action name="listQUANXIAO1" class="tongjiaction" method="listQUANXIAO1">
+		</action>
+		<!--统计全校2-->
+		<action name="listQUANXIAO2" class="tongjiaction" method="listQUANXIAO2">
+		</action>
+		<!--统计学院-->
+		<action name="listXUEYUANTONGJI" class="tongjiaction" method="listXUEYUANTONGJI">
+		</action>
+		
+		<!--统计专业-->
+		<action name="listZHUANYE_NIANJITONGJI" class="tongjiaction" method="listZHUANYE_NIANJITONGJI">
+		</action>
+		<!--统计年级-->
+		<action name="listZHUANYE_BANJITONGJI" class="tongjiaction" method="listZHUANYE_BANJITONGJI">
+		</action>
+
+		<!--统计班级-->
+		<action name="listZHUANYE_BANJIXUESHENGTONGJI" class="tongjiaction" method="listZHUANYE_BANJIXUESHENGTONGJI">
+		</action>
+		<!--统计同学-->
+		<action name="listZHUANYE_BANJIXUESHENGBYCQQKTONGJI" class="tongjiaction" method="listZHUANYE_BANJIXUESHENGBYCQQKTONGJI">
+		</action>
+		
+		<!--分教师统计-->
+		<action name="listTONGJIbyJG" class="tongjibyjgaction" method="listTONGJIbyJG">
+		</action>
+		<!--分教师详细信息-->
+		<action name="listTONGJIbyJGdetial" class="tongjibyjgaction" method="listTONGJIbyJGdetial">
+		</action>
+		<!--分教室统计-->
+		<action name="listTONGJIbyJS" class="tongjibyjsaction" method="listTONGJIbyJS">
+		</action>		
+		
+		<!--分教室统计详细信息-->
+		<action name="listTONGJIbyJSdetial" class="tongjibyjsaction" method="listTONGJIbyJSdetial">
+		</action>	
+		
+		<!-- 手工执行存储过程班级 -->
+		<action name="doBanjiExecute" class="tongjiaction" method="doBanjiExecute">
+		</action>
+		<!-- 手工执行存储过程学生-->
+		<action name="doXueshengExecute" class="tongjiaction" method="doXueshengExecute">
+		</action>
+
+		<!--列表不分页-->
+		<action name="listAllTONGJI" class="tongjiaction" method="listAllTONGJI">
+		</action>
+		<!-- 新增 -->
+		<action name="addTONGJI" class="tongjiaction" method="addTONGJI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateTONGJI" class="tongjiaction" method="updateTONGJI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 删除 -->
+		<action name="delTONGJI" class="tongjiaction" method="delTONGJI">
+			<result name="success" type="json"></result>
+		</action>
+		<!--校长前台页面 统计条件配置  添加统计查询条件-->
+		<action name="conditionsConfigurationSave" class="tongjiaction" method="conditionsConfigurationSave"></action>
+		<!--校长前台页面 统计条件配置  删除统计查询条件-->
+		<action name="conditionsConfigurationDel" class="tongjiaction" method="conditionsConfigurationDel"></action>
+		<!--校长前台页面 统计条件配置  获取全部查询配置条件-->
+		<action name="listConditionsConfiguration" class="tongjiaction" method="listConditionsConfiguration"></action>
+		<!--校长前台页面 首页 饼图数据显示  -->
+		<action name="getDataGraph"  class="tongjiaction" method="getDataGraph"></action>
+	</package>
+</struts>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="jiaoshiPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listJIAOSHI" class="jiaoshiaction" method="listJIAOSHI">
+		</action>
+		<!-- 查房间 -->
+		<action name="listAllFANGJIAN" class="jiaoshiaction" method="listAllFANGJIAN">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllJIAOSHI" class="jiaoshiaction" method="listAllJIAOSHI">
+		</action>
+		<!-- 新增 -->
+		<action name="addJIAOSHI" class="jiaoshiaction" method="addJIAOSHI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateJIAOSHI" class="jiaoshiaction" method="updateJIAOSHI">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delJIAOSHI" class="jiaoshiaction" method="delJIAOSHI">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

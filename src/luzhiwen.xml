@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="LuzhiwenPkg" extends="login-jsondefault">            
+		<action name="listLUZHIWEN" class="zhiwenaction" method="listLUZHIWEN">
+		</action>
+		<action name="addZHIWEN" class="zhiwenaction" method="addZHIWEN">
+			<param name="savePath">E://softwares</param>
+			<result name="success" type="json"></result>
+		</action>
+		<action name="delZHIWEN" class="zhiwenaction" method="delZHIWEN">
+			<param name="savePath">E://softwares</param>
+			<result name="success" type="json"></result>
+		</action>
+
+		<!-- 指纹插件下载 -->
+		<action name="download" class="downloadAction">
+			<!--指定被下载资源的位置 -->
+			<param name="inputPath">E:\softwares\ZWY_ActiveX.zip</param>
+			<!--配置结果类型为stream的结果 -->
+			<result name="success" type="stream">
+				<!--指定下载文件的文件类型 -->
+				<param name="contentType">application/zip</param>
+				<param name="inputName">inputStream</param>
+				<!--指定下载文件的下载方式及下载时的保存文件名，filename保存时的文件名必须有扩展名，扩展名指示了下载类型的图标 -->
+				<param name="contentDisposition">
+					attachment;filename=ZWY_ActiveX.zip
+				</param>
+				<!--指定下载文件的缓冲区大小 -->
+				<param name="bufferSize">4096</param>
+			</result>
+                        <result name="downloadException">/fingerprint/downloadException.jsp</result>
+                        <exception-mapping result="downloadException" exception="java.lang.Exception"></exception-mapping>
+		</action>
+	</package>
+</struts>
+

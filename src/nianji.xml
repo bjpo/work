@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="nianjiPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listNIANJI" class="nianjiaction" method="listNIANJI">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllNIANJI" class="nianjiaction" method="listAllNIANJI">
+		</action>
+		<!-- 新增 -->
+		<action name="addNIANJI" class="nianjiaction" method="addNIANJI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateNIANJI" class="nianjiaction" method="updateNIANJI">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delNIANJI" class="nianjiaction" method="delNIANJI">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

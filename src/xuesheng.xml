@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="XsxxPkg" extends="login-jsondefault">
+		<action name="listXsxx" class="xsxxaction" method="listXsxx">
+			<param name="savePath">D://KQData</param>
+		</action>
+		<action name="upateXsxx" class="xsxxaction" method="upateXsxx">
+			<result name="success" type="json"></result>
+			<param name="savePath">D://KQData</param>
+		</action>
+		<action name="changePic" class="xsxxaction" method="changePic">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

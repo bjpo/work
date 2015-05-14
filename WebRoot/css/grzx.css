@@ -1,0 +1,248 @@
+body {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: #3685f0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	list-style: none;
+}
+
+.title {
+	height: 134px;
+	width: 100%;
+	background: url(../img/grzx-title-bg.png) repeat-x;
+	border-bottom: 2px solid #95b8e7;
+}
+
+.title .txbk {
+	width: 178px;
+	height: 178px;
+	background: url(../img/txk.png);
+	position: relative;
+	top: 10px;
+	left: 5%;
+	float: left;
+	text-align: center;
+}
+
+.title .txbk img {
+	margin-top: 2px;
+}
+
+.title .yhm {
+	float: left;
+	margin: 15px 0 0 60px;
+}
+
+.title .yhm ul {
+	float: left;
+}
+
+.title .yhm ul li {
+	margin-top: 10px;
+}
+
+.title .yhm ul li span {
+	font-size: 14px;
+	color: #0048a8;
+}
+
+.title .gnk {
+	width: 375px;
+	height: 100px;
+	float: right;
+	margin: 20px 5px 0 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 8;
+}
+
+.title .gnk .bg {
+	background: url(../img/gnk.png);
+	width: 74px;
+	height: 74px;
+	float: right;
+	position: relative;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.title .gnk .gnq span {
+	font-size: 15px;
+	color: #6ba2eb;
+	cursor: pointer;
+}
+
+.title .gnk .bg span {
+	font-size: 16px;
+	color: #6ba2eb;
+	font-weight: 800;
+	float: left;
+	margin: 28px 0 0 20px;
+}
+
+.title .gnq {
+	width: 500px;
+	height: 74px;
+	background: url(../img/gjt.png);
+	float: right;
+	position: absolute;
+	z-index: 9;
+	right: -500px;
+	display: none;
+}
+
+.title .gnk ul {
+	float: left;
+	margin-top: 28px;
+}
+
+.title .gnk ul li {
+	list-style: none;
+	float: left;
+	margin: 0 0 0 30px;
+}
+
+.title .gnk ul li strong {
+	display: none;
+	cursor: pointer;
+	color: #6ba2eb;
+}
+
+.title .gnk ul li a {
+	text-decoration: none;
+	color: #3685f0;
+	font-size: 15px;
+}
+
+.title .gnk .zk {
+	float: right;
+	margin: 5px 7px 0 0;
+	font-size: 14px;
+	color: #6ba2eb;
+}
+
+.tsxx {
+	margin: 5px 0 0 6%;
+	float: left;
+}
+
+.tsxx span {
+	color: #6691cc;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 30px;
+}
+
+.tsxx a {
+	font-size: 14px;
+}
+
+.grxx {
+	width: 98%;
+	height: 300px;
+	float: left;
+	margin: 10px 1%;
+	display: block;
+}
+
+#wdzl {
+	font-size: 16px;
+	color: #3685f0;
+	cursor: pointer;
+}
+
+#wdzl:hover {
+	color: #0149a9;
+}
+
+.grxx .wdzl {
+	background: url(../img/wdxx.png);
+	width: 145px;
+	height: 143px;
+	float: left;
+	margin: 128px 0 0 20px;
+}
+
+.content {
+	float: left;
+	margin: 20px 0 0 60px;
+}
+
+.content .next {
+	background: url(../img/next.png);
+	width: 46px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.content .uppage {
+	background: url(../img/uppage.png);
+	width: 46px;
+	height: 16px;
+	cursor: pointer;
+	margin: 0 10px 0 0;
+}
+
+.content .yhxx {
+	margin-top: 50px;
+}
+
+.content span {
+	font-size: 14px;
+	color: #4d92ee;
+}
+
+.content .yhxx li {
+	height: 30px;
+	width: 100%;
+}
+
+.wdxx {
+	width: 98%;
+	height: 300px;
+	float: left;
+	margin: 10px 1%;
+	display: none;
+}
+
+.wdxx .wdtb {
+	background: url(../img/wdzl.png);
+	width: 144px;
+	height: 144px;
+	float: left;
+	margin: 128px 0 0 20px;
+}
+
+.wdts {
+	width: 98%;
+	height: 300px;
+	float: left;
+	margin: 10px 1%;
+	display: none;
+}
+
+.wdts .wdtbtwo {
+	background: url(../img/wdtz.png);
+	width: 144px;
+	height: 143px;
+	float: left;
+	margin: 128px 0 0 20px;
+}
+.book {
+	background: url(../img/book.png);
+	width: 201px;
+	height: 143px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}

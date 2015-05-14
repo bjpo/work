@@ -1,0 +1,226 @@
+/* public */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,tbody,thead
+	{
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font-size: 14px;
+	background: #fff;
+	-webkit-text-size-adjust: 100%;
+	overflow:hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* float */
+.f-l {
+	float: left;
+}
+
+.f-r {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.content{ width:1350px; height:645px; margin:0 auto;}
+.main {
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg) no-repeat;
+	margin: 0 auto;
+}
+
+.main .top-button {
+	margin: 30px 30px 0 0;
+}
+
+.main .top-button li {
+	float: left;
+	margin-left: 10px;
+}
+
+.main .top-button li a {
+	color: #000;
+	font-weight: 800;
+}
+
+.main .top-button li span {
+	color: #000;
+	font-weight: 800;
+}
+
+.main .top-button li a:hover {
+	color: #F00;
+}
+
+.main .button {
+	width: 230px;
+	height: 70px;
+	background: url(../img/button.png) no-repeat;
+	border: none;
+	float: left;
+	margin: 433px 0 0 606px;
+}
+
+.main .button:active {
+	background: url(../img/button-click.png) no-repeat;
+}
+
+.main #scrollPics {
+	height: 225px;
+	width: 400px;
+	overflow: hidden;
+	position: relative;
+	float: right;
+	margin: 200px 40px 0 0;
+	border: 1px solid #666;
+}
+
+.main .num {
+	position: absolute;
+	right: 5px;
+	bottom: 0;
+}
+
+.main #scrollPics .num li {
+	float: left;
+	color: #666;
+	text-align: center;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 3px 1px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.main #scrollPics .num li.on {
+	color: #666;
+	line-height: 21px;
+	width: 21px;
+	height: 21px;
+	font-size: 16px;
+	margin: 0 1px;
+	border: 0;
+	background-color: #ccc;
+	font-weight: bold;
+}
+
+.main .topbox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	width: 378px;
+	height: 312px;
+	margin: -160px 0 0 -187px;
+	background: url(../img/lagin.png) no-repeat;
+	display: none;
+}
+
+.main .topdown {
+	position: absolute;
+	margin: 0 0 0 -675px;
+	top:0;
+	left: 50%;
+	width: 1350px;
+	height: 645px;
+	background: url(../img/bg-x.png) no-repeat;
+	opacity: .9;
+	display: none;
+	
+}
+
+.main .topbox .close {
+	float: right;
+	background: url(../img/close.png);
+	width: 19px;
+	height: 19px;
+	border: none;
+	margin: 5px 10px 0 0;
+}
+
+.main .topbox .close:hover {
+	background: url(../img/close-hover.png);
+	cursor:help;
+}
+
+.main .topbox .input01 {
+	border: none;
+	float: left;
+	width: 248px;
+	height: 42px;
+	background: url(../img/input.png);
+	margin: 83px 0 0 82px;
+	font-size: 18px;
+	color: #333;
+	line-height:42px;
+}
+
+.main .topbox .input02 {
+	border: none;
+	float: left;
+	width: 248px;
+	height: 42px;
+	background: url(../img/input.png);
+	margin: 11px 0 0 82px;
+	font-size: 18px;
+	color: #333;
+	line-height:42px;
+}
+
+.main .topbox .input03 {
+	border: none;
+	float: left;
+	width: 92px;
+	height: 38px;
+	background: url(../img/input-y.png);
+	margin: 11px 0 0 50px;
+	font-size: 18px;
+	color: #333;
+	line-height:42px;
+	text-align:center;
+}
+
+.main .topbox .jin {
+	width: 282px;
+	height: 42px;
+	background: url(../img/jin.png);
+	float: left;
+	margin: 20px 0 0 48px;
+	border: none;
+}
+
+.main .topbox .jin:active {
+	background: url(../img/jin-click.png);
+	cursor:pointer;
+}
+/*µÇÂ¼Ò³ÃæÑéÖ¤ÂëÑùÊ½*/
+#code {
+	font-family: Î¢ÈíÑÅºÚ;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	border: 0;
+	color: #6699CC;
+	letter-spacing: 3px;
+	height: 36px;
+	width: 92px;
+	float:left;
+	margin:12px 0 0 20px;
+}
+#code:hover{cursor:pointer;}

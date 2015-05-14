@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<!-- 公共课Service -->
+	<bean id="gonggongkeService" class="com.hrbsys.gongongke.service.impl.GONGGONGKEServiceImpl"
+		scope="singleton">
+		<property name="baseDao">
+			<ref bean="baseDao" />
+		</property>
+
+	</bean>
+
+	<!-- 公共课action -->
+	<bean id="gonggongkeaction" class="com.hrbsys.gongongke.action.GONGGONGKEAction"
+		scope="prototype">
+		<!--公共课接口-->
+		<property name="ggkeService">
+			<ref local="gonggongkeService" />
+		</property>
+		<!--学生信息接口-->
+		<property name="xsxxService">
+			<ref bean="xsxxService" />
+		</property>
+		<!--实时数据接口-->
+		<property name="realService">
+			<ref bean="realTimeService"/>
+		</property>
+		<!--年级接口-->
+		<property name="njService">
+			<ref bean="nianjiService"/>
+		</property>
+		<!--班级接口-->
+		<property name="bjService">
+			<ref bean="banjiService"/>
+		</property>
+		<!--专业接口-->
+		<property name="zyService">
+			<ref bean="zhuanyeService"/>
+		</property>
+		<!-- 学生信息接口 -->
+		<property name="stuService">
+			<ref bean="studentService"/>
+		</property>
+	</bean>
+
+
+
+</beans>

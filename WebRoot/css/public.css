@@ -1,0 +1,66 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,tbody,thead{margin:0;padding:0}
+body{font-size:12px;background:#fff;-webkit-text-size-adjust:100%}
+a{color:#172c45;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:none}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+input{font-size:12px;border: 1px solid #99bbe8; line-height:18px;}
+.l-f{float:left;}
+.l-r{float:right;}
+.clear{clear:both;}
+
+.zylj{width:100px; height:100px; float:left; border:1px solid #666; margin:10px 10px;}
+.zylj:hover{border:1px solid #F00;}
+.link{width:900px; height:320px; overflow:scroll; overflow-y:hidden; margin:20px auto; }
+.link .bd{width:620px; margin:0 auto;}
+.link form table tr td .input{ width:350px; height:30px; font-size:14px;  line-height:30px;}
+.link form table tr td .ss{ width:100px; height:30px; font-size:14px;}
+.links{ width:900px; height:300px; margin-top:10px;}
+.panel-header{font-size:12px; padding:8px;}
+
+.one{ padding:2px;}
+.one span{text-align: right;}
+.tabs{ font-size:12px;}
+.tree{ font-size:12px;}
+.datagrid-toolbar{ height:auto;}
+.panel{ font-size:12px;}
+a.l-btn{font-size:12px;}
+.datagrid-header td{font-size:12px;}
+.datagrid-body td, .datagrid-footer td{font-size:12px;}
+.pagination-info{font-size:12px;}
+.pagination span{font-size:12px;}
+.layout-split-north {
+border-bottom: none;
+}
+
+form div{ padding:2px;}
+.window .window-body{background:url(../img/ssk-bg.png);}
+form table tr td{padding:2px; font-size:12px;}
+form table tr .title{text-align:right;}
+
+.sskzt{border:1px solid #99bbe8; background:url(../img/ssk-bg.png); float:left; width:100%;}
+
+
+.ssk tr td{padding:2px;height:30px; font-size:12px;}
+.ssk tr .title,#selectMode .title,#queryDay .title,#queryTerm .title{text-align:right; padding-left:20px;}
+.ssk tr input,#selectMode input,#queryDay input,#queryTerm input{  height:24px; line-height:24px;}
+.ssk tr td button,.ts button{width:59px; height:23px; background:url(../img/button-ss.png); border:none;}
+.ssk tr td button:hover{cursor:pointer;}
+.ssk tr td .qx{width:59px; height:23px; background:url(../img/button-qx.png); border:none;}
+.ssk tr td .qx:hover{cursor:pointer;}
+.fqx{ float:left; width:200px;}
+
+
+#selectMode{margin:5px 0 5px 0;}
+#queryDay div{margin:5px 0 5px 0;}
+#queryTerm div{margin:5px 0 5px 0;}
+.sj_btn{background:#ff0; float:right; margin:10px 100px; border:none;}
+#downLoad{width:100%; height:30px;background:#e5ecfe; border: 1px scroll #666; position: absolute; top:0; display:none; z-index:999999;
+border:1px solid #99bbe8;}
+#downLoad span{float:left; margin:7px 0 0 12px; font-size:12px; color:#f00;}
+#downLoad .button{float:right; margin:7px 15px 0 0; background:url(../img/download.png); width:70px;height:20px;}
+#downLoad #gb{float:right; margin:9px 5px 0 0;}
+#downLoad .button:hover{background:url(../img/download-hover.png);}

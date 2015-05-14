@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="jiaogongPackage" extends="login-jsondefault">
+		<!--列表 -->
+		<action name="listJIAOGONG" class="jiaogongaction" method="listJIAOGONG">
+		</action>
+		<!--列表不分页 -->
+		<action name="listAllJIAOGONG" class="jiaogongaction" method="listAllJIAOGONG">
+		</action>
+		<!-- 新增 -->
+		<action name="addJIAOGONG" class="jiaogongaction" method="addJIAOGONG">
+		</action>
+		<!-- 修改 -->
+		<action name="updateJIAOGONG" class="jiaogongaction" method="updateJIAOGONG">
+		</action>
+		<!-- 删除 -->
+		<action name="delJIAOGONG" class="jiaogongaction" method="delJIAOGONG">
+			<result name="success" type="json"></result>
+		</action>
+		<!--添加教工指纹信息 -->
+		<action name="addJGZHIWEN" class="jiaogongaction" method="addJGZHIWEN">
+			<param name="savePath">D://KQData</param>
+		</action>
+		<!-- 删除教工指纹信息 -->
+		<action name="delJGZHIWEN" class="jiaogongaction" method="delJGZHIWEN">
+			<param name="savePath">D://KQData</param>
+		</action>
+	</package>
+</struts>
+

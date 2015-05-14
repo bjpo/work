@@ -1,0 +1,41 @@
+.grzl-title{ background: url(../../img/xz/grzl-title.png); width:176px; height: 40px; margin: 40px 0 0 56px;}
+.tzzx-title{ background: url(../../img/xz/tzzx-title.png); width:203px; height: 40px; margin: 40px 0 0 56px; display:none;}
+.xgmm-title{ background: url(../../img/xz/xgmm-title.png); width:196px; height: 40px; margin: 40px 0 0 56px; display:none;}
+.grzx{ background: url(../../img/xz/grzx-menu.png); width: 111px; height: 262px;  margin: 18px 0 0 56px; }
+.user-bg{ background: url(../../img/xz/user-bg.png); width: 889px; height: 358px; margin: 18px 0 0 0; }
+.grzx ul li{ height: 35px; margin: 5px 0 11px 15px;  padding-left:10px ; width: 86px;}
+.grzx ul li .blus{ color: #3c7bb2; font-weight: 800; }
+.grzx ul .user-bg{ background: url(../../img/xz/grzx-click.png);  }
+.grzx ul li span{ color: #fff; font-size: 16px; line-height: 40px; cursor:pointer;}
+.grzl{ display: block;}
+.grzl .yhtx{ background: url(../../img/xz/txman.png); width: 136px; height: 170px; float: left; margin: 50px 0 0 10px;}
+.grzl .content{ margin: 25px 0 0 50px;  width: 300px;}
+.grzl .xm{ font-size: 25px; color: #2B7CC4; font-weight: 800;}
+.grzl .content .zc{ margin: 10px 0 0 50px; color: #5299D1; }
+.grzl .content ul{ margin-top:20px ;}
+.grzl .content ul li{ height: 30px;}
+.grzl .content ul li span{ color: #555555 }
+.tzzx{ display: none;}
+.tzzx table{margin:50px 0 0 80px;}
+.tzzx table tr{ height: 30px;}
+.tzzx table tr .content{ width: 400px;	word-break: keep-all; /* 不换行 */
+	white-space: nowrap; /* 不换行 */
+	overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow: ellipsis;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用*/}
+	#releaseTime {
+	width: 400px; text-align: right; 
+}
+.tzzx table tr .content .wd{ font-weight:800; }
+.tzzx table tr .content .yd{ font-weight:100; }
+.tzzx table tr .content a{ color: #302D2D;}
+.tzzx table tr .content a:hover{ color: #2787BE;}
+.xgmm{ display: none;}
+.xgmm table{ margin:30px 0 0 120px; }
+.xgmm table tr { height: 50px; }
+.xgmm table tr .title{ text-align: right;  margin-right:10px ;}
+.xgmm table tr td input{ background:none; background: url(../../img/xz/tcdl.png); border: 1px solid #2b7cc4; }
+.xgmm table tr td #modifyBtn{  width:120px; height: 30px; background: #5299D1; border: 1px solid #2b7cc4;;}
+.main .footer{ margin-top: 35px; }
+.next{ background: url(../../img/xz/next.png); width: 46px; height: 16px; margin:8px 0 0 7px ;cursor:pointer; }
+.uppage{ background: url(../../img/xz/uppage.png); width: 46px; height: 16px; margin:8px 10px 0 0 ;cursor:pointer; }

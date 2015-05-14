@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 学院管理 相关action -->
+	<package name="xueyuanAction" extends="login-jsondefault">
+		<!--学院列表 -->
+		<action name="listXueYuan" class="XueYuanAction" method="listXueYuan">
+		</action>
+		<!--列表不分页 -->
+		<action name="listAllXUEYUAN" class="XueYuanAction" method="listAllXUEYUAN"></action>
+		<!-- 新增学院 -->
+		<action name="addXueYuan" class="XueYuanAction" method="addXueYuan">
+		</action>
+		<!-- 修改学院 -->
+		<action name="updateXueYuan" class="XueYuanAction" method="updateXueYuan">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 删除学院 -->
+		<action name="delXueYuan" class="XueYuanAction" method="delXueYuan">
+			<result name="success" type="json"></result>
+		</action>
+		<!--查询学院的名称 -->
+		<action name="listforXUEYUAN" class="XueYuanAction" method="listforXUEYUAN">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

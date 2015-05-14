@@ -1,0 +1,19 @@
+.pkck{ width: 700px; height: 500px;  border: 1px solid #FF0000; background: #d2e5ff;}
+.pkck .title{ background: url(../img/pk-title.png); width: 135px; height: 32px; margin: 20px 0 0 20px; }
+.pkck img{ margin: 10px 0 0 100px; }
+.pkck form .one{ margin: 20px 0 0 0; }
+.pkck form .two{ margin: 20px 0 0 0; display: none; }
+.pkck form .three{ margin: 20px 0 0 0; display: none; }
+.pkck form .four{ margin: 130px 0 0 260px; text-align: center;display: none; }
+.pkck form .four .pkwc{ font-size: 20px;}
+.pkck form table tr td h4{ color: #0e2da0; margin: 10px 0 0 10px; }
+.pkck form table tr:nth-child(2n){ height: 40px;}
+.pkck form table tr .t-title{ text-align: right; color: #7babeb;}
+.pkck form table tr td input{ border: 1px solid #7BABEB; line-height: 26px;}
+.pkck form table tr td span{ color: #9c9999; font-size: 12px; }
+.pkck form table tr td .bzf{color: #FF0000; margin: 0 10px 0 10px;}
+.pkck form table tr td .btn-down{float: right;}
+.pkck form table tr td .btn-up{float: right;}
+.pkck form table tr td .bc{float: right;}
+.pkck form table tr td button{ background: #7BABEB; color: #D2E5FF;  border: none; width: 100px; height: 30px;}
+#fhdrc{ width: 180px; }

@@ -1,0 +1,17 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,tbody,thead{ margin:0; padding:0; }
+body{font-size:14px; -webkit-text-size-adjust:100%; }
+a{ text-decoration:none; }
+a:hover{ color:#f00; text-decoration:underline; }
+em{ font-style:normal; }
+li{ list-style:none; }
+img{ border:0; vertical-align:middle; }
+table{ border-collapse:collapse; border-spacing:0; }
+p{ word-wrap:break-word; }
+input{ line-height:20px; font-size:14px; }
+.l-f{ float:left; }
+.l-r{ float:right; }
+.clear{ clear:both; }
+
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="BuildingsPkg" extends="login-jsondefault">
+		<action name="listJXL" class="jxlaction" method="listJXL">
+		</action>
+		<action name="listAllJXL" class="jxlaction" method="listAllJXL">
+		</action>
+		<action name="addJXL" class="jxlaction" method="addJXL">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="updateJXL" class="jxlaction" method="updateJXL">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="delJXL" class="jxlaction" method="delJXL">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

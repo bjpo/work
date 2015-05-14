@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="zhuanyePackage" namespace="/" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listZhuanYe" class="com.hrbsys.zhuanye.action.ZhuanYeAction" method="listZHUANYE">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllZHUANYE" class="com.hrbsys.zhuanye.action.ZhuanYeAction" method="listAllZHUANYE">
+		</action>
+		<!-- 新增 -->
+		<action name="addZHUANYE" class="com.hrbsys.zhuanye.action.ZhuanYeAction" method="addZHUANYE">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateZHUANYE" class="com.hrbsys.zhuanye.action.ZhuanYeAction" method="updateZHUANYE">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delZHUANYE" class="com.hrbsys.zhuanye.action.ZhuanYeAction" method="delZHUANYE">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 根据学院查专业 -->
+		<action name="listZHUANYEFORXUEYUAN" class="com.hrbsys.zhuanye.action.ZhuanYeAction" method="listZHUANYEFORXUEYUAN">
+		</action>
+	</package>
+</struts>
+

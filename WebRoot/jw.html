@@ -1,0 +1,106 @@
+<!DOCTYPE html >
+
+<head>
+	<meta charset="utf-8">
+	<title>教务管理系统</title>
+	<link rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/default/easyui.css" />
+	<link rel="stylesheet" type="text/css" href="js/jquery-easyui/themes/icon.css" />
+	<script type="text/javascript" src="js/jquery-easyui/jquery.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/jquery-easyui/jquery.easyui.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/jquery-easyui/locale/easyui-lang-zh_CN.js"></script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		$(function() {
+			$('#tree1').tree({
+				method: 'get',
+				url: 'tree.json',
+				onClick: function(node) {
+					addTab(node);
+				},
+				onDblClick: function(node) {
+					if (node.state == 'closed') {
+						$(this).tree('expand', node.target);
+					} else {
+						$(this).tree('collapse', node.target);
+					}
+				}
+			});
+			
+			
+			var centerTabs;
+
+			function addTab(node) {
+				if (centerTabs.tabs('exists', node.text)) {
+					centerTabs.tabs('select', node.text);
+				} else {
+					if (node.attributes.url && node.attributes.url.length > 0) {
+						$.messager.progress({
+							text: '页面加载中...',
+							interval: 100
+						});
+						centerTabs.tabs('add', {
+							title: node.text,
+							closable: true,
+							content: '<iframe src="' + node.attributes.url + '" frameborder="0" style="border:0;width:100%;height:100%" />'
+						});
+						$.messager.progress('close');
+					} else {
+						centerTabs.tabs('add', {
+							title: node.text,
+							closable: true,
+							content: '<iframe src="' + node.attributes.url + '" frameborder="0" style="border:0;width:100%;height:100%"',
+							tools: [{
+								iconCls: 'icon-mini-refresh',
+								handler: function() {
+									refreshTab(node.text);
+								}
+							}]
+						});
+					}
+				}
+			}
+
+			function refreshTab(title) {
+				var tab = centerTabs.tabs('getTab', title);
+				centerTabs.tabs('update', {
+					tab: tab,
+					options: tab.panel('options')
+				});
+			}
+
+			$(function() {
+				centerTabs = $('#centerTab').tabs({
+					border: false,
+					fit: true,
+					onSelect: function(title) {}
+				});
+			});
+		});
+	</script>
+	<!--左、中布局      -->
+	<div class="easyui-layout" fit="true">
+		<!--左边布局 -->
+		<div data-options="region:'west',title:'教务菜单',split:true" style="width:15%;">
+			<div id="aa" class="easyui-accordion" style="width:300px;height:200px;" fit="true">
+				<div title="查询与统计" data-options="iconCls:'icon-save'" style="overflow:auto;padding:10px;">
+					<ul id="tree1"></ul>
+				</div>
+				<div title="特殊分类查询" data-options="iconCls:'icon-save'" style="overflow:auto;padding:10px;">
+				</div>
+				<div title="系统管理" data-options="iconCls:'icon-reload'" style="padding:10px;">
+				</div>
+				<div title="系统配置" data-options="iconCls:'icon-save'">
+				</div>
+			</div>
+		</div>
+		<!--中间部分-->
+		<div data-options="region:'center'"  style="overflow:hidden;">
+			<div id="centerTab" class="easyui-tabs"></div>
+		</div>
+	</div>
+</body>
+
+</html>

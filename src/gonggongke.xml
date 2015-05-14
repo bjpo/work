@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="gonggongkePackage" namespace="/" extends="login-jsondefault">
+		<!--列表 -->
+		<action name="listGONGGONGKE" class="gonggongkeaction" method="listGONGGONGKE">
+		</action>
+		<!-- 查询老师的名称 -->
+		<action name="findLAOSHIMC" class="gonggongkeaction" method="findLAOSHIMC">
+		</action>
+		<!--查询教室的名称 -->
+		<action name="findJSMC" class="gonggongkeaction" method="findJSMC">
+		</action>
+		<!--查询公共选修课的课程名称 -->
+		<action name="findKSMC" class="gonggongkeaction" method="findKSMC"></action>
+		<!--查询授课名称 -->
+		<action name="findSKMC" class="gonggongkeaction" method="findSKMC">
+		</action>
+		<!-- 进一步查看，查询结果 -->
+		<action name="enterView" class="gonggongkeaction" method="enterView">
+		</action>
+	</package>
+</struts>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="jiaogonglbPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listJIAOGONGLB" class="jiaogonglbaction" method="listJIAOGONGLB">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllJIAOGONGLB" class="jiaogonglbaction" method="listAllJIAOGONGLB">
+		</action>
+		<!-- 新增 -->
+		<action name="addJIAOGONGLB" class="jiaogonglbaction" method="addJIAOGONGLB">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateJIAOGONGLB" class="jiaogonglbaction" method="updateJIAOGONGLB">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delJIAOGONGLB" class="jiaogonglbaction" method="delJIAOGONGLB">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

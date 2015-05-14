@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="sbxxPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listSBXX" class="sbxxaction" method="listSBXX">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllSBXX" class="sbxxaction" method="listAllSBXX">
+		</action>
+		<!-- 新增 -->
+		<action name="addSBXX" class="sbxxaction" method="addSBXX">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateSBXX" class="sbxxaction" method="updateSBXX">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delSBXX" class="sbxxaction" method="delSBXX">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

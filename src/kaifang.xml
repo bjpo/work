@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="kaiFangPackage" extends="login-jsondefault">
+		<!-- 列出所有的数据 -->
+		<action name="listKaiFang" class="kaiFangAction" method="listKaiFang"></action>
+		<!-- 详细页面的数据展示 -->
+		<action name="detail"  class="kaiFangAction" method="detail"></action>
+	</package>
+</struts>
+

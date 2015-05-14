@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="zwlrlbPackage" extends="login-jsondefault">
+		<!--列表 -->
+		<action name="listZWLRLB" class="zwlrlbaction" method="listZWLRLB">
+		</action>
+		<!--列表不分页 -->
+		<action name="listAllZWLRLB" class="zwlrlbaction" method="listAllZWLRLB">
+		</action>
+		<!-- 新增 -->
+		<action name="addZWLRLB" class="zwlrlbaction" method="addZWLRLB">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateZWLRLB" class="zwlrlbaction" method="updateZWLRLB">
+			<!-- <result name="success" type="json"></result> -->
+		</action>
+		<!-- 删除 -->
+		<action name="delZWLRLB" class="zwlrlbaction" method="delZWLRLB">
+			<result name="success" type="json"></result>
+		</action>
+
+		<!-- 根据列表名称查找id -->
+		<action name="listTitleId" class="zwlrlbaction" method="listTitleId"></action>
+		<!-- 将学生信息添加到指纹录入名单中 -->
+		<action name="stuToZWLRList" class="zwlrlbaction" method="stuToZWLRList"></action>
+		<!-- 班级下拉列表条件选择后调用的方法 -->
+		<action name="banJiForXS" class="zwlrlbaction" method="banJiForXS"></action>
+		<!--修改时查询出属于某个名单中的学生 -->
+		<action name="updateInXs" class="zwlrlbaction" method="updateInXs"></action>
+		<!--修改时查询出不属于名单中的学生 -->
+		<action name="updateNotInXs" class="zwlrlbaction" method="updateNotInXs"></action>
+		<!--修改时修改学生指纹录入名单中的学生 -->
+		<action name="update_del" class="zwlrlbaction" method="update_del"></action>
+
+		<!--指纹录入功能部分 已经录入人数与总人数 -->
+		<action name="getCountZWLRMD" class="zwlrlbaction" method="getCountZWLRMD"></action>
+		<!--指纹 录入功能部分 打开指纹录入功能时，显示当前学生和下一位学生的姓名与学号 -->
+		<action name="findTwoData" class="zwlrlbaction" method="findTwoData"></action>
+		<!--指纹录入功能部分 查询出指纹录入名单中，没有录入指纹的学生信息 -->
+		<action name="notFP" class="zwlrlbaction" method="notFP"></action>
+		<!-- 批量删除学生的指纹信息 -->
+		<action name="delStuZHIWEN" class="zwlrlbaction" method="delStuZHIWEN">
+			<param name="savePath">E://KQData</param>
+		</action>
+
+	</package>
+</struts>
+

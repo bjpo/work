@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="fingerprint" extends="login-jsondefault">
+        <action name="fingerprint_*" class="fingerprintAction" method="{1}">
+            <result name="map" type="json">
+                <param name="root">map</param>
+            </result>
+            <result name="list" type="json">
+                <param name="root">list</param>
+            </result>
+        </action>
+    </package>
+</struts>

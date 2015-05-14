@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 用户组 相关action-->
+	<package name="yonghuzuAction" extends="login-jsondefault">
+		<!--列表用户带分页与排序-->
+		<action name="listYHZ" class="yhaction" method="listYHZ">
+		</action>
+		<!--列表用户组for 用户-->
+		<action name="listYHZforYONGHU" class="yhaction" method="listYHZforYONGHU">
+		</action>
+		<!-- 新增用户组 -->
+		<action name="addYHZ" class="yhaction" method="addYHZ">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改用户组 -->
+		<action name="updateYHZ" class="yhaction" method="updateYHZ">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除用户组 -->
+		<action name="delYHZ" class="yhaction" method="delYHZ">
+			<result name="success" type="json"></result>
+		</action>
+		<!--列表用户for用户-->
+		<action name="listYONGHUforYONGHU" class="yhaction" method="listYONGHUforYONGHU">
+		</action>
+		<!--获取用户组全部信息（不进行分页） -->
+		<action name="listAllYHZ" class="yhaction" method="listAllYHZ"></action>
+	</package>
+	
+	<!--用户相关action-->
+	<package name="yonghuAction" extends="login-jsondefault">
+		<!--列表用户 -->
+		<action name="listYONGHU" class="yhaction" method="listYONGHU">
+		</action>
+		<!-- 新增用户 -->
+		<action name="addYONGHU" class="yhaction" method="addYONGHU">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改用户 -->
+		<action name="updateYONGHU" class="yhaction" method="updateYONGHU">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除用户 -->
+		<action name="delYONGHU" class="yhaction" method="delYONGHU">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+	
+	<!--角色相关action-->
+	<package name="jueseAction" extends="login-jsondefault">
+		<!--列表角色 -->
+		<action name="listJUESE" class="yhaction" method="listJUESE">
+		</action>
+		<!-- 新增角色 -->
+		<action name="addJUESE" class="yhaction" method="addJUESE">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改角色 -->
+		<action name="updateJUESE" class="yhaction" method="updateJUESE">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除角色 -->
+		<action name="delJUESE" class="yhaction" method="delJUESE">
+			<result name="success" type="json"></result>
+		</action>
+		<!--列表角色for 用户-->
+		<action name="listJUESEforYONGHU" class="yhaction" method="listJUESEforYONGHU">
+		</action>
+	</package>
+	
+	<!--模块相关action-->
+	<package name="mokuaiAction" extends="login-jsondefault">
+		<!--列表模块 -->
+		<action name="listMOKUAI" class="yhaction" method="listMOKUAI">
+		</action>
+		<!-- 新增模块 -->
+		<action name="addMOKUAI" class="yhaction" method="addMOKUAI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改模块 -->
+		<action name="updateMOKUAI" class="yhaction" method="updateMOKUAI">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除模块 -->
+		<action name="delMOKUAI" class="yhaction" method="delMOKUAI">
+			<result name="success" type="json"></result>
+		</action>
+		<!--列表模块for 用户-->
+		<action name="listMOKUAIforYONGHU" class="yhaction" method="listMOKUAIforYONGHU">
+		</action>
+	</package>
+	
+	<!--角色2用户相关action-->
+	<package name="juese2yonghuAction" extends="login-jsondefault">
+		<!--列表角色2用户 -->
+		<action name="listJUESE2YONGHU" class="yhaction" method="listJUESE2YONGHU">
+		</action>
+		<!-- 新增角色2用户-->
+		<action name="addJUESE2YONGHU" class="yhaction" method="addJUESE2YONGHU">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改角色2用户-->
+		<action name="updateJUESE2YONGHU" class="yhaction" method="updateJUESE2YONGHU">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除角色2用户-->
+		<action name="delJUESE2YONGHU" class="yhaction" method="delJUESE2YONGHU">
+			<result name="success" type="json"></result>
+		</action>
+	</package>	
+
+	<!--角色2用户组相关action-->
+	<package name="juese2yonghuzuAction" extends="login-jsondefault">
+		<!--列表角色2用户组 -->
+		<action name="listJUESE2YONGHUZU" class="yhaction" method="listJUESE2YONGHUZU">
+		</action>
+		<!-- 新增角色2用户组-->
+		<action name="addJUESE2YONGHUZU" class="yhaction" method="addJUESE2YONGHUZU">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改角色2用户组-->
+		<action name="updateJUESE2YONGHUZU" class="yhaction" method="updateJUESE2YONGHUZU">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除角色2用户组-->
+		<action name="delJUESE2YONGHUZU" class="yhaction" method="delJUESE2YONGHUZU">
+			<result name="success" type="json"></result>
+		</action>
+	</package>	
+	
+		<!--角色2模块相关action-->
+	<package name="juese2MOKUAIAction" extends="login-jsondefault">
+		<!--列表角色2模块 -->
+		<action name="listJUESE2MOKUAI" class="yhaction" method="listJUESE2MOKUAI">
+		</action>
+		<!-- 新增角色2模块-->
+		<action name="addJUESE2MOKUAI" class="yhaction" method="addJUESE2MOKUAI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改角色2模块-->
+		<action name="updateJUESE2MOKUAI" class="yhaction" method="updateJUESE2MOKUAI">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除角色2模块-->
+		<action name="delJUESE2MOKUAI" class="yhaction" method="delJUESE2MOKUAI">
+			<result name="success" type="json"></result>
+		</action>
+	</package>	
+	</struts>
+

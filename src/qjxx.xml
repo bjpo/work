@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="qjxxPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listQJXX" class="qjxxaction" method="listQJXX">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllQJXX" class="qjxxaction" method="listAllQJXX">
+		</action>
+		<!--教工列表-->
+		<action name="listJIAOGONGForQJ" class="qjxxaction" method="listJIAOGONGForQJ">
+		</action>
+		
+		<!-- 新增 -->
+		<action name="addQJXX" class="qjxxaction" method="addQJXX">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateQJXX" class="qjxxaction" method="updateQJXX">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delQJXX" class="qjxxaction" method="delQJXX">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

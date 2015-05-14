@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="banjiPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listBANJI" class="banjiaction" method="listBANJI">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllBANJI" class="banjiaction" method="listAllBANJI">
+		</action>
+		<!--年级不分页-->
+		<action name="listAllNIANJIFORBANJI" class="banjiaction" method="listAllNIANJIFORBANJI">
+		</action>
+		<!--专业不分页-->
+		<action name="listAllZHUANYEFORBANJI" class="banjiaction" method="listAllZHUANYEFORBANJI">
+		</action>
+		<!--根据专业、年级查班级-->
+		<action name="listBANJIByZHUANYEAndNIANJI" class="banjiaction" method="listBANJIByZHUANYEAndNIANJI">
+		</action>
+		<!-- 新增 -->
+		<action name="addBANJI" class="banjiaction" method="addBANJI">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateBANJI" class="banjiaction" method="updateBANJI">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delBANJI" class="banjiaction" method="delBANJI">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

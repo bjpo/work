@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="xsxkPackage" extends="login-jsondefault">
+		<!--列表 -->
+		<action name="listXSXK" class="xsxkaction" method="listXSXK">
+		</action>
+		<!-- 列表不进行分页 -->
+		<action name="listAllXSXK" class="xsxkaction" method="listAllXSXK">
+		</action>
+		<!-- 添加选课 -->
+		<action name="addKcXX" class="xsxkaction" method="addKcXX">
+		</action>
+		
+		<action name="xuanke" class="xsxkaction" method="xuanke">
+		</action>
+	</package>
+</struts>
+

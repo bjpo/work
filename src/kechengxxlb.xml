@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="kechengxxlbPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listKECHENGXXLB" class="kechengxxlbaction" method="listKECHENGXXLB">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllKECHENGXXLB" class="kechengxxlbaction" method="listAllKECHENGXXLB">
+		</action>
+		<!-- 新增 -->
+		<action name="addKECHENGXXLB" class="kechengxxlbaction" method="addKECHENGXXLB">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateKECHENGXXLB" class="kechengxxlbaction" method="updateKECHENGXXLB">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delKECHENGXXLB" class="kechengxxlbaction" method="delKECHENGXXLB">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

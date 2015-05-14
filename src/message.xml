@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="messagePack" extends="login-jsondefault">
+		<!-- 用户获取全部的消息 -->
+		<action name="getAllMessage" class="messageAction" method="getAllMessage"></action>
+		<!--修改用户读取消息的状态 -->
+		<action name="updateMessage" class="messageAction" method="updateMessage"></action>
+	</package>
+</struts>
+

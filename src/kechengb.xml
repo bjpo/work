@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="kechengbPackage" extends="login-jsondefault">
+		<!--列表 -->
+		<action name="listKECHENGB" class="kechengbaction" method="listKECHENGB">
+		</action>
+		<!--列表不分页 -->
+		<action name="listAllKECHENGB" class="kechengbaction" method="listAllKECHENGB">
+		</action>
+		<!-- 新增 -->
+		<action name="addKECHENGB" class="kechengbaction" method="addKECHENGB">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateKECHENGB" class="kechengbaction" method="updateKECHENGB">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 删除 -->
+		<action name="delKECHENGB" class="kechengbaction" method="delKECHENGB">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 获取课程表ID 通过UUID方法获取 -->
+		<action name="getKCBID" class="kechengbaction" method="getKCBID">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 判断排课的学期 -->
+		<action name="deterTerm" class="kechengbaction" method="deterTerm">
+		</action>
+	</package>
+	<package name="getkcbpkg" extends="struts-default">
+		<!--其他页面获取课程表action -->
+		<action name="getKECHENGBIAO" class="kechengbaction" method="getKECHENGBIAO">
+			<result name="success">/kechengb/kechengbiao.jsp</result>
+			<result name="fail">/kechengb/kechengbiao_fail.jsp</result>
+		</action>
+	</package>
+</struts>
+

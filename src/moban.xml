@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="mobanPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listMOBAN" class="mobanaction" method="listMOBAN">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllMOBAN" class="mobanaction" method="listAllMOBAN">
+		</action>
+		<!-- 新增 -->
+		<action name="addMOBAN" class="mobanaction" method="addMOBAN">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateMOBAN" class="mobanaction" method="updateMOBAN">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delMOBAN" class="mobanaction" method="delMOBAN">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

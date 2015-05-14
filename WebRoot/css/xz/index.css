@@ -1,0 +1,68 @@
+/* 鑳屾櫙鍥剧墖 */
+body{ width: 100%; font-family: Arial; font-size: 12px; background-attachment: fixed; background-image:url(../../img/xz/bg.png); background-repeat: no-repeat; background-position: center top; background-color:#2787be; }
+/* 涓荤獥鍙ｈ儗鏅�*/
+.main{ background: url(../../img/xz/main-bg.png);  height: 618px; width: 1118px; position: relative; left: 50%;  top:50%;margin: 20px 0 0 -559px; }
+/* header鍖哄煙 鏍峰紡琛�*/
+.main .header{ width: 1072px; height: 28px; margin: 18px 0 0 20px; }
+.main .header .portrait{ background: url(../../img/xz/portrait.png); width: 23px; height: 25px; }
+.main .header .use{ margin: 6px 0 0 15px; }
+.main .header .use span{ color: #555555; }
+.main .header .use #user:hover{ cursor:pointer; color: #5299d1;}
+.main .header .use #go:hover{cursor:pointer; color: #5299d1;}
+.main .header .tool{ background: url(../../img/xz/tool.png); width: 143px; height: 28px; display: none;}
+.main .header .tool a{ font-size: 12px; color: #555555; margin: 7px 0 0 15px; cursor:pointer; line-height: 28px;}
+.main .header .tool a:hover{color: #5299d1;}
+.main .header .qh{ background: url(../../img/xz/qh.png); width: 119px; height: 24px; cursor:pointer; }
+.main .header .qh:hover{ background: url(../../img/xz/qh-hover.png);}
+.main .header .xxts{ margin: 3px 30px 0 0; width: 85px; height: 18px; background: url(../../img/xz/dp.png) no-repeat; }
+.main .header .xxts a{ color: #555555; margin-left:20px ; line-height: 20px; cursor:pointer;}
+.main .header .xxts a:hover{color: #FF0000;}
+/* 鎼滅储鍖哄煙 */
+.main .cxk{ width: 600px; height: 30px; margin: 30px auto 0; }
+.main .cxk .ssk{ background: url(../../img/xz/cxk.png); width: 453px; height: 30px; }
+.main .cxk .cx-btn{ background: url(../../img/xz/cx-btn.png); width: 70px; height: 30px;  margin-left:5px ; cursor:pointer; border:none; }
+.main .cxk .ssk .content{ background: url(../../img/xz/cx-xl.png); width: 445px; height: 28px; position: relative;}
+.main .cxk .ssk .content span{ line-height: 28px; margin-left:5px ; cursor:pointer;}
+.main .cxk .ssk .menu{ background: url(../../img/xz/cx-fxk.png); width: 453px; height: 108px; position: absolute; top:30px; display: none;}
+.main .cxk .ssk .menu ul{ margin-top:1px ;}
+.main .cxk .ssk .menu ul li{ height: 26px; width: 451px; margin-left: 1px; cursor:pointer;}
+.main .cxk .ssk .menu ul li:hover{ background: url(../../img/xz/cx-fxk-hover.png);}
+.main .cxk .ssk .menu ul li span{ line-height: 26px; margin-left:5px ; }
+.main .cxk .ssk .menu ul li span:hover{ color: #161414;}
+/* 缁熻鍖�*/
+.main .tj{ width:480px; height: 310px; margin: 40px 0 0 75px;}
+.main .tj .title{ background: url(../../img/xz/tj.png); width: 424px; height: 27px; margin-left: 30px;}
+.main .tj .title .tj-menu{ width: 90px; height: 20px; position: relative; cursor:pointer;}
+.main .tj .title .tj-menu .content{ background: url(../../img/xz/tj-xlk.png); width: 322px; height: 125px; position: absolute; top:-20px;display: none;}
+.main .tj .title .tj-menu .content ul{  overflow-x: hidden; overflow-y:scroll ; height:80px; width:308px;}
+.main .tj .title .tj-menu .content ul li .tjxk{ background: url(../../img/xz/tjxk.png); width: 13px;  height: 12px;  margin: 2px 0 0 0; cursor:pointer;}
+.main .tj .title .tj-menu .content ul li .tjxk-click{background: url(../../img/xz/tjxk-click.png);}
+.main .tj .title .tj-menu .content ul li  span{ cursor:pointer; }
+.main .tj .title .tj-menu .content ul{margin: 12px 0 0 10px; }
+.main .tj .title .tj-menu .content ul li{ margin:5px 0 0 10px; float: left; }
+.main .tj .title .tj-menu .content .red{ color: #FF0000; font-size: 12px; margin-left: 5px; line-height: 28px; }
+.main .tj .title .tj-menu .content .tj-btn{ background: url(../../img/xz/tj-btn.png); width: 35px; height: 15px; margin: 6px 10px 0 0;cursor:pointer; }
+.main .tj .content{ margin-top: 40px;}
+.main .tj .content .tjbt{ background: url(../../img/xz/xxbt.png); width: 120px; height: 47px; text-align: right; }
+.main .tj .content .tjbt span{ float: right; margin:20px 35px 0 0; color: #dfe1e3;}
+.main .tj .content .cxqk{ margin: 30px 0 0 0px; }
+.main .tj .content .cxqk span{ color: #302d2d; font-weight:700;}
+.main .fgx{ background: url(../../img/xz/fgx.png); width: 2px; height: 340px;  margin-top: 40px; }
+.main #main{ width:300px; height:300px; margin:30px 155px 0 0;}
+.main .bzt{ background: url(../../img/xz/bzt.png); width: 337px; height: 296px; margin: 40px 80px 0 0; }
+/* footer */
+.main .footer{ width: 1101px; height: 70px;  margin-left:5px; margin-top:51px; overflow: hidden;}
+.main .footer .qxcx{ margin: 25px 0 0 0; }
+.main .footer .qxcx span{ margin-left: 30px; color: #302d2d; font-size: 16px; }
+.main .footer .tcdl{ background: url(../../img/xz/tcdl.png); width: 150px; height: 70px; cursor:pointer; }
+.main .footer .tcdl .tc-span{ background: url(../../img/xz/tc-span.png); width: 92px; height: 27px; margin: 20px auto 0; display: block;}
+.main .footer .tcdl:hover{ background: url(../../img/xz/tcdl-hover.png); }
+.main .footer .pz{ background: url(../../img/xz/pz.png); width: 190px; height: 70px; cursor: pointer; }
+.main .footer .pz .pz-span{ background: url(../../img/xz/pz-span.png); width: 135px; height: 38px; margin: 15px auto 0; display: block;}
+.main .footer .pz:hover{ background: url(../../img/xz/pz-hover.png); }  
+
+
+
+
+
+

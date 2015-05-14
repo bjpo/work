@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="kqxx_xscqPackage" extends="login-jsondefault">
+		<!--列表-->
+		<action name="listKQXX_XSCQ" class="kqxx_xscqaction" method="listKQXX_XSCQ">
+		</action>
+		<!--列表不分页-->
+		<action name="listAllKQXX_XSCQ" class="kqxx_xscqaction" method="listAllKQXX_XSCQ">
+		</action>
+		<!-- 新增 -->
+		<action name="addKQXX_XSCQ" class="kqxx_xscqaction" method="addKQXX_XSCQ">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 修改 -->
+		<action name="updateKQXX_XSCQ" class="kqxx_xscqaction" method="updateKQXX_XSCQ">
+			<result name="success" type="json"></result>	
+		</action>
+		<!-- 删除 -->
+		<action name="delKQXX_XSCQ" class="kqxx_xscqaction" method="delKQXX_XSCQ">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
+

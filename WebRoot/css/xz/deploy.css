@@ -1,0 +1,43 @@
+.main .deploy{ margin: 52px 0 0 56px; width: 700px; }
+.main .deploy .title{ font-size: 16px; color: #9fa8b0; }
+.main .deploy .deployone-bg{ background: url(../../img/xz/deloy-bg.png); width: 700px; height: 334px; margin: 10px 0 0 0;}
+.main .deploy .deployone-bg .xlxx{ margin: 15px 0 0 -5px; }
+.main .deploy .deployone-bg .xlxx li{ float: left;  margin-left:20px ;  position: relative; }
+.main .deploy .deployone-bg .xlxx li .ksrq-bk{ background: url(../../img/xz/rq-bg.png); width: 202px; height: 152px; position: absolute; top:20px; display: none; }
+.main .deploy .deployone-bg .xlxx li .jsrq-bk{ background: url(../../img/xz/rq-bg.png); width: 202px; height: 152px; position: absolute; top:20px; display: none; }
+.main .deploy .deployone-bg .xlxx li .xq-bk{ background: url(../../img/xz/xq-bg.png); width: 109px; height: 154px; position: absolute; top:20px; display: none; }
+.main .deploy .deployone-bg .xlxx li span{ color: #fff; cursor:pointer;}
+.main .deploy .deployone-bg .xlxx img{ margin-left: 10px; }
+.main .deploy .deployone-bg .tsxx{ float: right; color: #f0e0aa; margin: 20px 22px 0 0; }
+.main .deploy .deployone-bg .content{ margin:10px 0 0 15px;}
+.main .deploy .deployone-bg .content span{ color: #fff; }
+.main .deploy .deployone-bg .content .deploytwo-bg{ background: url(../../img/xz/deloytwo-bg.png); width: 620px; height: 60px; margin-left:15px ; }
+.main .deploy .deployone-bg .content .deploytwo-bg ul li .tjxk{ background: url(../../img/xz/tjxk.png); width: 13px;  height: 12px;  margin: 2px 0 0 0; cursor:pointer; }
+.main .deploy .deployone-bg .content .deploytwo-bg ul li .tjxk-click{background: url(../../img/xz/tjxk-click.png);}
+.main .deploy .deployone-bg .content .deploytwo-bg ul li  span{ cursor:pointer; color: #3b3939;}
+.main .deploy .deployone-bg .content .deploytwo-bg ul{margin: 2px 0 0 10px; }
+.main .deploy .deployone-bg .content .deploytwo-bg ul li{ margin:8px 0 0 10px; float: left; }
+.main .deploy .deployone-bg .content .deploytwo-bg .next{ background: url(../../img/xz/next.png); width: 46px; height: 16px; margin:8px 10px 0 0 ;cursor:pointer; }
+.main .deploy .deployone-bg .content .deploytwo-bg .uppage{ background: url(../../img/xz/uppage.png); width: 46px; height: 16px; margin:8px 10px 0 0 ;cursor:pointer; }
+.main .deploy .pzbc{ background: url(../../img/xz/btn-pzbc.png); width: 80px; height: 30px; margin-top:10px ; cursor:pointer; }
+.main .fgx{ margin: 90px 50px 0 50px; }
+.main .fhsy{ background: url(../../img/xz/fhsy.png);  width: 87px; height: 16px; float: right; margin: 30px 60px 0 0; }
+.main .fhsy:hover{ background: url(../../img/xz/fhsy-hover.png); }
+.main .bcpz{ width: 200px; }
+.main .bcpz .bcpz-bg{ background: url(../../img/xz/bcpz-bg.png); width: 200px; height: 300px; margin-top:10px ; }
+.main .bcpz .bcpz-bg ul{ margin: 20px 0 0 0; cursor:pointer; }
+.main .bcpz .bcpz-bg ul li .xk{ background: url(../../img/xz/tjxk.png); width: 13px;  height: 12px;  margin: 8px 5px 0 0; cursor:pointer; float: left; display: none; }
+.main .bcpz .bcpz-bg ul li .xk-click{ background: url(../../img/xz/tjxk-click.png); width: 13px;  height: 12px;  margin: 8px 5px 0 0; cursor:pointer; float: left; display: none; }
+.main .bcpz .bcpz-bg ul li{ height: 25px; width:180px ; padding-left:20px ;overflow:hidden; /*超出的部分隐藏起来。*/
+ white-space:nowrap;/*不显示的地方用省略号...代替*/     
+  text-overflow:ellipsis;/* 支持 IE */  
+  -o-text-overflow: ellipsis;    /* 支持 Opera */}
+.main .bcpz .bcpz-bg ul li span{ color: #3b3939; line-height: 28px; }
+.main .bcpz .bcpz-bg .tsxx{ color: #F0E0AA; font-size: 12px; float: right; margin: 0 10px 0 0;}
+.main .bcpz .bcpz-bg ul .bxx{ background: #d5e0e9; }
+.main .bcpz .title{ margin: 25px 0 0 0; color: #fff; font-size:16px ; }
+.main .bcpz .bc{ background: url(../../img/xz/bc-btn.png); width: 50px; height: 30px;  margin-top: 10px; cursor:pointer; display: none; }
+.main .bcpz .bj{ background: url(../../img/xz/btn-bj.png); width: 50px; height: 30px;  margin-top: 10px; cursor:pointer; display: block; }
+.main .bcpz .sc{ background: url(../../img/xz/sc-btn.png); width: 50px; height: 30px;  margin: 10px 10px 0 0; cursor:pointer; display: none; }
+.main .bcpz .xq{ background: url(../../img/xz/ckxq-btn-click.png); width: 80px; height: 30px;  margin: 10px 10px 0 0; cursor:pointer;  }
+.main .footer{ margin-top: 36px; }
