@@ -35,9 +35,9 @@ import com.hrbsys.xueqi.service.XUEQIService;
 
 /**
  * 课程表Action
- * 
+ *
  * @author admin
- * 
+ *
  */
 public class KECHENGBAction extends ActionBase {
 	private static final long serialVersionUID = 1L;
@@ -101,6 +101,50 @@ public class KECHENGBAction extends ActionBase {
 	private String order;
 	private String sort;
 
+//    private List hebing(List<KECHENGB> list1) {
+//        List<KECHENGB> list = new ArrayList<>();
+//        Map<String, KECHENGB> map = new HashMap<>();
+//        for (KECHENGB kechengb : list1) {
+//            if (map.containsKey(kechengb.getKCXXMC())) {
+//                String key = kechengb.getKCXXMC();
+//                String value = map.get(key).getLAOSHIGH() + "," + kechengb.getLAOSHIGH();
+//                map.get(key).setLAOSHIGH(value);
+//                value = map.get(key).getLAOSHIMC() + "," + kechengb.getLAOSHIMC();
+//                map.get(key).setLAOSHIMC(value);
+//                value = map.get(key).getKCBLB() + "," + kechengb.getKCBLB();
+//                map.get(key).setKCBLB(value);
+//                value = map.get(key).getJSMC() + "," + kechengb.getJSMC();
+//                map.get(key).setJSMC(value);
+//                value = map.get(key).getKSMC() + "," + kechengb.getKSMC();
+//                map.get(key).setKSMC(value);
+//                value = map.get(key).getKSZHOU() + "," + kechengb.getKSZHOU();
+//                map.get(key).setKSZHOU(value);
+//                value = map.get(key).getJSZHOU() + "," + kechengb.getJSZHOU();
+//                map.get(key).setJSZHOU(value);
+//                value = map.get(key).getXINGQI() + "," + kechengb.getXINGQI();
+//                map.get(key).setXINGQI(value);
+//                value = map.get(key).getXINGQIXH() + "," + kechengb.getXINGQIXH();
+//                map.get(key).setXINGQIXH(value);
+//                value = map.get(key).getXINGQIXH() + "," + kechengb.getXINGQIXH();
+//                map.get(key).setXINGQIXH(value);
+//                value = map.get(key).getKS_KSSJ() + "," + kechengb.getKS_KSSJ();
+//                map.get(key).setKS_KSSJ(value);
+//                value = map.get(key).getKS_JSSJ() + "," + kechengb.getKS_JSSJ();
+//                map.get(key).setKS_JSSJ(value);
+//                value = map.get(key).getMS() == null ? "无" : map.get(key).getMS() + "," + kechengb.getMS() == null ? "无" : kechengb.getMS();
+//                map.get(key).setMS(value);
+//                value = map.get(key).getBZ() == null ? "无" : map.get(key).getBZ() + "," + kechengb.getBZ() == null ? "无" : kechengb.getBZ();
+//                map.get(key).setBZ(value);
+//            } else {
+//                map.put(kechengb.getKCXXMC(), kechengb);
+//            }
+//        }
+//        for (String key : map.keySet()) {
+//            list.add(map.get(key));
+//        }
+//        return list;
+//    }
+
 	public void listKECHENGB() throws Exception {
 		HashMap<String, String> params = new HashMap<String, String>();
 		JsonConfig config = new JsonConfig();
@@ -140,10 +184,12 @@ public class KECHENGBAction extends ActionBase {
 		String pkqx = super.session.get("kechengbQX").toString(); // 获取排课权限
 		String jgid = super.session.get("JIAOGONGID").toString();// 获取教工工号
 		log.info(pkqx + "-->" + jgid);
-		
+
 		List<KECHENGB> list = kechengbService.findKECHENGBByPageApp(start,
 				number, params, order, sort, pkqx, jgid);// 每页的数据，放入list
-		
+                                    //List<KECHENGB> list1 = kechengbService.findKECHENGBByPageApp(start, number, params, order, sort, pkqx, jgid);//合并
+            //List<KECHENGB> list = hebing(list1);//合并
+
 		// 判断权限是不是个人
 		if (pkqx.equals("geren")) {
 			//判断集合的大小
@@ -158,13 +204,14 @@ public class KECHENGBAction extends ActionBase {
 			}
 		}else{
 			jsonMap.put("total",kechengbService.getCountKECHENGB(params));
+                    //jsonMap.put("total", list.size());//合并
 			jsonMap.put("rows", list);// rows键 存放每页记录 list
 			jsonMap.put("page", intPage);
 			// config.setExcludes(new String[]{"yonghus"});//除去级联属性
 			new JsonPrintTools().printJSON(JSONObject.fromObject(jsonMap, config));
 		}
-	
-		
+
+
 
 	}
 
@@ -522,7 +569,7 @@ public class KECHENGBAction extends ActionBase {
 			request.put("list_kechengb", list);
 			request.put("list_keshi", list_ks);
 			return SUCCESS;
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			return "fail";
@@ -587,7 +634,7 @@ public class KECHENGBAction extends ActionBase {
 		return SUCCESS;
 	}
 
-	
+
 	public void jsonNull(){
 		Map<String,Object> jsonMap=new HashMap<String, Object>();
 		JsonConfig config = new JsonConfig();
@@ -600,7 +647,7 @@ public class KECHENGBAction extends ActionBase {
 		kcb.setJS_ID(null);
 		kcb.setLAOSHI_ID(null);
 		kcb.setKS_ID(null);
-		
+
 		kcb.setKCBLB("无记录");
 		kcb.setKCXXMC("无记录");
 		kcb.setJSMC("无记录");
@@ -624,7 +671,7 @@ public class KECHENGBAction extends ActionBase {
 		new JsonPrintTools().printJSON(JSONObject.fromObject(jsonMap, config));
 		return;
 	}
-	
+
 	public String getKS_KSSJ() {
 		return KS_KSSJ;
 	}

@@ -165,11 +165,13 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	</bean>
 
 	<!-- 定时任务 每晚执行跑数据SQL -->
-<!--	<bean id="taskService" class="com.hrbsys.task.service.impl.TaskServiceImpl">
+	<bean id="taskService" class="com.hrbsys.task.service.impl.TaskServiceImpl">
 		<property name="baseDao">
 			<ref bean="baseDao" />
 		</property>
-	</bean>
+                </bean>
+                
+                <!--
 	<bean id="task" class="com.hrbsys.task.NFDFlightDataTimerTask">
 		<property name="ts">
 			<ref bean="taskService" />

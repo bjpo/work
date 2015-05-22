@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/F:/Projects/NetBeans%20Projects%20SVN/hrbUniSys/WebRoot/js/xzqt/index.js</file>
+            <file>file:/F:/Projects/NetBeans%20Projects%20SVN/hrbUniSys/src/com/hrbsys/kqxxbjxx/service/impl/KQXX_BJXXServiceImpl.java</file>
+            <file>file:/F:/Projects/NetBeans%20Projects%20SVN/hrbUniSys/WebRoot/xzqt/index.jsp</file>
+            <file>file:/F:/Projects/NetBeans%20Projects%20SVN/hrbUniSys/src/com/hrbsys/tongji/service/impl/TONGJIServiceImpl.java</file>
+            <file>file:/F:/Projects/NetBeans%20Projects%20SVN/hrbUniSys/src/com/hrbsys/tongji/action/TONGJIAction.java</file>
+            <file>file:/F:/Projects/NetBeans%20Projects%20SVN/hrbUniSys/src/com/hrbsys/realtime/service/impl/RealTimeServiceImpl.java</file>
+            <file>file:/F:/Projects/NetBeans%20Projects%20SVN/hrbUniSys/src/com/hrbsys/bean/KQXX_BJXX.java</file>
+        </group>
     </open-files>
 </project-private>

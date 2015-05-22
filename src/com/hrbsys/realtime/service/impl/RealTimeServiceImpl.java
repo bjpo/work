@@ -74,7 +74,7 @@ public class RealTimeServiceImpl implements RealTimeService {
 			String xsid) {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String nowTime = df.format(new Date()); // 当前时间转化成字符串
-		String hql = "select * from kechengb a where 1=1  and kcblb in ('专业选修课','专业必修课','公共选修课') and xueqi_id in (select xq_id from xueqi where to_date(ksrq,'yyyy-mm-dd')<=sysdate and to_date(jsrq,'yyyy-mm-dd')>=sysdate) ";
+                                    String hql = "select * from kechengb a where 1=1  and kcblb in (N'专业选修课',N'专业必修课',N'公共选修课') and xueqi_id in (select xq_id from xueqi where to_date(ksrq,'yyyy-mm-dd')<=sysdate and to_date(jsrq,'yyyy-mm-dd')>=sysdate) ";
 		System.out.println("RealtimeServiceImpl中打印::" + "andparam是：#########3"
 				+ andparam);
 		if (null != andparam && !"".equals(andparam)) {
