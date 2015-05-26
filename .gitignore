@@ -1,8 +1,7 @@
 *.class
 *.war
 *.ear
+*.jar
 /.svn
 /build
 /dist
-
-#*.jar
