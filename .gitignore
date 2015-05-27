@@ -1,9 +1,7 @@
 *.class
-
-# Package Files #
-*.jar
 *.war
 *.ear
+*.jar
 /.svn
 /build
 /dist
