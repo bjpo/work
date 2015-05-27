@@ -30,7 +30,7 @@ $(function ()
                         ];
                         var option = {
                             legend: {orient: 'horizontal', y: '20px', x: 'right', data: ['出席', '迟到', '早退', '缺席']},
-                            tooltip: {trigger: 'item', formatter: "{b} : {c} ({d}%)"},
+                            tooltip: {trigger: 'item', formatter: "{b}:{c}人 ({d}%)"},
                             series: [{type: 'pie', radius: '55%', center: ['50%', '60%'], data: result}]
                         };
                         var myChart = echarts.init(document.getElementById('main'));
@@ -147,20 +147,20 @@ $(function ()
     $(".tj-menu").mouseleave(function ()
     {
         $("#xy").empty();
-        $(".tj-menu .content").stop().fadeOut("slow");
+        $(".tj-menu .content").stop().fadeOut("1");
     });
     //选框效果
-    $(".tjxk").click(function () 
+    $(".tjxk").click(function ()
     {
-        if ($(this).hasClass("tjxk-click")) 
+        if ($(this).hasClass("tjxk-click"))
         {
             $(this).removeClass("tjxk-click");
-        } else 
+        } else
         {
             $(this).addClass("tjxk-click");
         }
     });
-    $("#message").click(function () 
+    $("#message").click(function ()
     {
         window.location.href = "user.jsp?name=tzzx";
     });
@@ -188,7 +188,7 @@ function query()
                 ];
                 var option = {
                     legend: {orient: 'horizontal', y: '20px', x: 'right', data: ['出席', '迟到', '早退', '缺席']},
-                    tooltip: {trigger: 'item', formatter: "{b} : {c} ({d}%)"},
+                    tooltip: {trigger: 'item', formatter: "{b}:{c}人 ({d}%)"},
                     series: [{type: 'pie', radius: '55%', center: ['50%', '60%'], data: result}]
                 };
                 var myChart = echarts.init(document.getElementById('main'));
@@ -254,11 +254,38 @@ function xyBar(obj)
                             var CDRSWIDTH = CDRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 330;
                             var ZTRSWIDTH = ZTRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 330;
                             var QXRSWIDTH = QXRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 330;
-                            //var ZCCXRSBI = Math.round(ZCCXRS / YSKRS * 10000) / 100.00;
-                            var ZCCXRSBI = Math.round(ZCCXRS / YSKRS * 100);
-                            var CDRSBI = Math.round(CDRS / YSKRS * 100);
-                            var ZTRSBI = Math.round(ZTRS / YSKRS * 100);
-                            var QXRSBI = Math.round(QXRS / YSKRS * 100);
+                            var ZCCXRSBI = Math.round(ZCCXRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            var CDRSBI = Math.round(CDRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            var ZTRSBI = Math.round(ZTRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            var QXRSBI = Math.round(QXRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            $("#cxBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">出席:' + ZCCXRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
+                            $("#cdBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">迟到:' + CDRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
+                            $("#ztBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">早退:' + ZTRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
+                            $("#qxBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">缺席:' + QXRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
                             $("#cxBar_" + i).css({width: ZCCXRSWIDTH});
                             $("#cdBar_" + i).css({width: CDRSWIDTH});
                             $("#ztBar_" + i).css({width: ZTRSWIDTH});
@@ -338,11 +365,38 @@ function manuallySelectedXY1()
                             var CDRSWIDTH = CDRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 330;
                             var ZTRSWIDTH = ZTRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 330;
                             var QXRSWIDTH = QXRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 330;
-                            //var ZCCXRSBI = Math.round(ZCCXRS / YSKRS * 10000) / 100.00;
-                            var ZCCXRSBI = Math.round(ZCCXRS / YSKRS * 100);
-                            var CDRSBI = Math.round(CDRS / YSKRS * 100);
-                            var ZTRSBI = Math.round(ZTRS / YSKRS * 100);
-                            var QXRSBI = Math.round(QXRS / YSKRS * 100);
+                            var ZCCXRSBI = Math.round(ZCCXRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            var CDRSBI = Math.round(CDRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            var ZTRSBI = Math.round(ZTRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            var QXRSBI = Math.round(QXRS / (ZCCXRS + CDRS + ZTRS + QXRS) * 10000) / 100.00;
+                            $("#cxBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">出席:' + ZCCXRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
+                            $("#cdBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">迟到:' + CDRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
+                            $("#ztBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">早退:' + ZTRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
+                            $("#qxBar_" + i).tooltip({
+                                position: 'top',
+                                content: '<span style="color:#fff">缺席:' + QXRS + '人</span>',
+                                onShow: function () {
+                                    $(this).tooltip('tip').css({backgroundColor: '#1A1A1A', borderColor: '#666'});
+                                }
+                            });
                             $("#cxBar_" + i).css({width: ZCCXRSWIDTH});
                             $("#cdBar_" + i).css({width: CDRSWIDTH});
                             $("#ztBar_" + i).css({width: ZTRSWIDTH});

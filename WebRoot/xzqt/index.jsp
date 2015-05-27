@@ -73,10 +73,10 @@
                     <span id="tj_1"></span><!-- 标题 -->
                 </div>
                 <div class="l-f" id="data_0" style="width:350px">
-                    <div class="l-f" style="width:0px ; height: 35px; background: #277ebc;" id="cxBar_0"></div><!-- 出席 -->
-                    <div class="l-f" style="width:0px ; height: 35px; background: #091a6d;" id="cdBar_0"></div><!-- 迟到 -->
-                    <div class="l-f" style="width:0px ; height: 35px; background: #e7908e;" id="ztBar_0"></div><!-- 早退 -->
-                    <div class="l-f" style=" width:0px ; height: 35px; background: #830300;" id="qxBar_0"></div><!-- 缺席 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #277ebc;" id="cxBar_0"></div><!-- 出席 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #091a6d;" id="cdBar_0"></div><!-- 迟到 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #e7908e;" id="ztBar_0"></div><!-- 早退 -->
+                    <div class="l-f easyui-tooltip" style=" width:0px ; height: 35px; background: #830300;" id="qxBar_0"></div><!-- 缺席 -->
                     <div class="clear"></div>
                     <div class="cxqk l-f">
                         <span>出席:<span id="cx_0"></span>%  迟到:<span id="cd_0"></span>%  早退:<span id="zt_0"></span>%  缺席:<span id="qx_0"></span>%</span>
@@ -96,10 +96,10 @@
                     <span id="tj_2"></span><!-- 标题 -->
                 </div>
                 <div  id="data_1" class="l-f" style="width:350px">
-                    <div class="l-f" style="width:0px ; height: 35px; background: #277ebc;" id="cxBar_1"></div><!-- 出席 -->
-                    <div class="l-f" style="width:0px ; height: 35px; background: #091a6d;" id="cdBar_1"></div><!-- 迟到 -->
-                    <div class="l-f" style="width:0px ; height: 35px; background: #e7908e;" id="ztBar_1"></div><!-- 早退 -->
-                    <div class="l-f" style=" width:0px ; height: 35px; background: #830300;" id="qxBar_1"></div><!-- 缺席 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #277ebc;" id="cxBar_1"></div><!-- 出席 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #091a6d;" id="cdBar_1"></div><!-- 迟到 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #e7908e;" id="ztBar_1"></div><!-- 早退 -->
+                    <div class="l-f easyui-tooltip" style=" width:0px ; height: 35px; background: #830300;" id="qxBar_1"></div><!-- 缺席 -->
                     <div class="clear"></div>
                     <div class="cxqk l-f">
                         <span>出席:<span id="cx_1"></span>%  迟到:<span id="cd_1"></span>%  早退:<span id="zt_1"></span>%  缺席<span id="qx_1"></span>%</span>
@@ -119,10 +119,10 @@
                     <span id="tj_3"></span><!-- 标题 -->
                 </div>
                 <div class="l-f" id="data_2" class="l-f" style="width:350px">
-                    <div class="l-f" style="width:0px ; height: 35px; background: #277ebc;" id="cxBar_2"></div><!-- 出席 -->
-                    <div class="l-f" style="width:0px ; height: 35px; background: #091a6d;" id="cdBar_2"></div><!-- 迟到 -->
-                    <div class="l-f" style="width:0px ; height: 35px; background: #e7908e;" id="ztBar_2" ></div><!-- 早退 -->
-                    <div class="l-f" style=" width:0px ; height: 35px; background: #830300;" id="qxBar_2"></div><!-- 缺席 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #277ebc;" id="cxBar_2"></div><!-- 出席 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #091a6d;" id="cdBar_2"></div><!-- 迟到 -->
+                    <div class="l-f easyui-tooltip" style="width:0px ; height: 35px; background: #e7908e;" id="ztBar_2" ></div><!-- 早退 -->
+                    <div class="l-f easyui-tooltip" style=" width:0px ; height: 35px; background: #830300;" id="qxBar_2"></div><!-- 缺席 -->
                     <div class="clear"></div>
                     <div class="cxqk l-f">
                         <span>出席:<span id="cx_2"></span>%  迟到:<span id="cd_2"></span>%  早退:<span id="zt_2"></span>%  缺席:<span id="qx_2"></span>%</span>

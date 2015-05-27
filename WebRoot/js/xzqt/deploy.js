@@ -445,6 +445,11 @@ function pzbc() {
 	if ($("#jstime").val() != "") {
 		queryTitle += " +" + $("#jstime").val();
 	}
+    if (xy_id.length === 0)
+    {
+        $.messager.alert("提示", "请选择学院");
+        return false;
+    }
 	$.ajax({
 		url : "conditionsConfigurationSave.action",
 		data : "KSRQ=" + $("#kstime").val() + "&JSRQ=" + $("#jstime").val()
@@ -454,7 +459,8 @@ function pzbc() {
 		success : function(data) {
 			var obj = eval("(" + data + ")");
 			$.messager.alert("提示", obj.message);
-			
+            $("#pztj > li").remove();
+            listConditionsConfiguration();	
 		}
 	});
 }
