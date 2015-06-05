@@ -43,19 +43,18 @@
 <!-- 告知spring context config location 的存储位置 -->
 <context-param>
 <param-name>contextConfigLocation</param-name>
-<!--<param-value>/WEB-INF/classes/applicationContext*.xml</param-value>-->
 <param-value>classpath:/config/applicationContext*.xml</param-value>
 </context-param>
 
-<!-- 定时任务 每天跑中间表数据
-<listener>
+<!-- 定时任务 每天跑中间表数据 -->
+<!--<listener>
  <listener-class>
   com.hrbsys.task.NFDFlightDataTaskListener
  </listener-class>
 </listener>
- -->
 
-<!--<listener>
+
+<listener>
  <listener-class>
   com.hrbsys.tongzhi.TongzhiTaskListener
  </listener-class>

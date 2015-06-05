@@ -43,7 +43,7 @@
 		<action name="notFP" class="zwlrlbaction" method="notFP"></action>
 		<!-- 批量删除学生的指纹信息 -->
 		<action name="delStuZHIWEN" class="zwlrlbaction" method="delStuZHIWEN">
-			<param name="savePath">E://KQData</param>
+			<param name="savePath">D://KQData</param>
 		</action>
 
 	</package>

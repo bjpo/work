@@ -4,7 +4,7 @@
 		<!--上传文件 -->
 		<action name="fileUpload" class="FileUploadAction" method="fileUpload">
 			<!--设置存储的盘符 -->
-			<param name="drive">E:</param>
+			<param name="drive">D:</param>
 			<!-- 动态设置 Action 中的 savePath 属性的值 -->
 			<param name="savePath">uploadfiles</param>
 		</action>
@@ -16,7 +16,7 @@
 		<!-- 删除上传文件 -->
 		<action name="delUploadFile" class="FileUploadAction" method="delUploadFile">
 			<!--设置存储的盘符 -->
-			<param name="drive">E:</param>
+			<param name="drive">D:</param>
 			<!-- 动态设置 Action 中的 savePath 属性的值 -->
 			<param name="savePath">uploadfiles</param>
 		</action>
@@ -24,7 +24,7 @@
 		<!-- 将上传文件中的数据导入到数据库 -->
 		<action name="importDataToDB" class="FileUploadAction" method="importDataToDB">
 			<!--设置存储的盘符 -->
-			<param name="drive">E:</param>
+			<param name="drive">D:</param>
 			<!-- 动态设置 Action 中的 savePath 属性的值 -->
 			<param name="savePath">uploadfiles</param>
 		</action>

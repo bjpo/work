@@ -17,31 +17,21 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 		<property name="driverClassName">
 			<value>oracle.jdbc.driver.OracleDriver</value>
 		</property>
-
 		<property name="url">
 			<value>jdbc:oracle:thin:@113.6.251.26:1521:htgkkq</value>
 		</property>
-		<!-- 测试环境 -->
-
-		<property name="username">
-			<value>htkaoqin</value>
-		</property>
-		<property name="password">
-			<value>htkaoqin</value>
-		</property>
-
-		<!-- 生产环境 -->
 		<!--
+		 测试环境 帐号:htkaoqin 密码:htkaoqin 
+		 生产环境 帐号:kqprod 密码:kqprod20150319
+		 -->
 		<property name="username">
-			<value>kqprod</value>
+			<value>htkaoqin</value>
 		</property>
 		<property name="password">
-			<value>kqprod20150319</value>
+			<value>htkaoqin</value>
 		</property>
-		-->
+		
 		<property name="validationQuery" value="select * from dual" />
-
-
 	</bean>
 
 	<!--Hibernate的Spring配置 -->
@@ -55,7 +45,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 		<!-- hibernate自身属性 -->
 		<property name="hibernateProperties">
 			<props>
-				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.show_sql">false</prop>
 				<prop key="hibernate.format_sql">true</prop>
 				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
 				<prop key="hibernate.cache.use_query_cache">false</prop>
@@ -169,10 +159,8 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 		<property name="baseDao">
 			<ref bean="baseDao" />
 		</property>
-                </bean>
-                
-                <!--
-	<bean id="task" class="com.hrbsys.task.NFDFlightDataTimerTask">
+	</bean>
+<!--	<bean id="task" class="com.hrbsys.task.NFDFlightDataTimerTask">
 		<property name="ts">
 			<ref bean="taskService" />
 		</property>
