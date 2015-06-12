@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-<constant name="struts.enable.DynamicMethodInvocation" value="true" />
-	<package name="struts2" extends="struts-default" namespace="/">
-		<action name="asdf" class="saveUserAction">
-			<result name="success">test/test.jsp</result>
-		</action>
-	</package>
-	<!-- 用户登录、权限相关拦截器 -->
-	<package name="login-jsondefault" extends="json-default">
-		<interceptors>
-			<!-- 自定义拦截器 -->
-			<interceptor name="permission" class="com.hrbsys.login.LoginInterceptor" />
-			<!-- 配制默许的拦截器到拦截器栈 -->
-			<interceptor-stack name="permissionStack">
-				<interceptor-ref name="permission" />
-				<interceptor-ref name="defaultStack" />
-			</interceptor-stack>
-		</interceptors>
-		<!-- 配置默认的拦截器 -->
-		<default-interceptor-ref name="permissionStack" />
-		<!-- 全局变量 -->
-		<global-results>
-			<result name="success">login.jsp</result>
-		</global-results>
-	</package>
-	<!-- 登陆action -->
-	<package name="login" extends="struts-default">
-		<action name="login" class="loginAction" method="login">
-			<result name="success" type="redirect">/index.jsp</result>
-			<result name="fail">/login.jsp</result>
-		</action>
-		<action name="logout" class="loginAction" method="logout">
-			<result name="success">/login.jsp</result>
-		</action>
-		<!-- 生成验证码的Action -->
-		<action name="imageCode" class="com.hrbsys.login.action.ImageCodeAction">
-			<!-- 通过stream类型的Result， 向页面输出生成验证码的二进制数据。 -->
-			<result name="success" type="stream">
-				<param name="inputName">imageStream</param>
-			</result>
-		</action>
-	</package>
-
-	<!-- 菜单tree action -->
-	<package name="MenuTree" extends="json-default">
-		<action name="getMenuTree" class="treeMenuAction" method="getMenuTree">
-		</action>
-	</package>
-	<include file="test.xml"></include>
-	<include file="users.xml"></include>
-	<include file="buildings.xml"></include>
-	<include file="room.xml"></include>
-	<include file="xueyuan.xml"></include>
-	<include file="kechengxxlb.xml"></include>
-	<include file="FileUpload.xml"></include>
-	<include file="keshi.xml"></include>
-	<include file="kechengxx.xml"></include>
-	<include file="student.xml"></include>
-	<include file="kechengb.xml"></include>
-	<include file="jiaogonglb.xml"></include>
-	<include file="jiaogong.xml"></include>
-	<include file="zhuanye.xml"></include>
-	<include file="jiaoshi.xml"></include>
-	<include file="nianji.xml"></include>
-	<include file="xuesheng.xml"></include>
-	<include file="banji.xml"></include>
-	<include file="skxsxx.xml"></include>
-	<include file="xueqi.xml"></include>
-	<include file="kqxx_bjxx.xml"></include>
-	<include file="kqxx_xscq.xml"></include>
-	<include file="tongji.xml"></include>
-	<include file="luzhiwen.xml"></include>
-	<include file="moban.xml"></include>
-	<include file="moban_ziduan.xml"></include>
-	<include file="sbxx.xml"></include>
-	<include file="youjianlb.xml"></include>
-	<include file="monitongji.xml"></include>
-	<include file="ckxx.xml"></include>
-	<include file="qjxx.xml"></include>
-	<include file="xsxk.xml"></include>
-	<include file="gonggongke.xml"></include>
-	<include file="zwlrlb.xml"></include>
-	<include file="zwlrlbgx.xml"></include>
-	<include file="kaifang.xml"></include>
-	<include file="menu.xml"></include>
-	<include file="message.xml"></include>
-        <include file="fingerprint.xml"></include>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <package name="struts2" extends="struts-default" namespace="/">
+        <action name="asdf" class="saveUserAction">
+            <result name="success">test/test.jsp</result>
+        </action>
+    </package>
+    <!-- 用户登录、权限相关拦截器 -->
+    <package name="login-jsondefault" extends="json-default">
+        <interceptors>
+            <!-- 自定义拦截器 -->
+            <interceptor name="permission" class="com.hrbsys.login.LoginInterceptor" />
+            <!-- 配制默许的拦截器到拦截器栈 -->
+            <interceptor-stack name="permissionStack">
+                <interceptor-ref name="permission" />
+                <interceptor-ref name="defaultStack" />
+            </interceptor-stack>
+        </interceptors>
+        <!-- 配置默认的拦截器 -->
+        <default-interceptor-ref name="permissionStack" />
+        <!-- 全局变量 -->
+        <global-results>
+            <result name="success">login.jsp</result>
+        </global-results>
+    </package>
+    <!-- 登陆action -->
+    <package name="login" extends="struts-default">
+        <action name="login" class="loginAction" method="login">
+            <result name="success" type="redirect">/index.jsp</result>
+            <result name="fail">/login.jsp</result>
+        </action>
+        <action name="logout" class="loginAction" method="logout">
+            <result name="success">/login.jsp</result>
+        </action>
+        <!-- 生成验证码的Action -->
+        <action name="imageCode" class="com.hrbsys.login.action.ImageCodeAction">
+            <!-- 通过stream类型的Result， 向页面输出生成验证码的二进制数据。 -->
+            <result name="success" type="stream">
+                <param name="inputName">imageStream</param>
+            </result>
+        </action>
+    </package>
+    <!-- 菜单tree action -->
+    <package name="MenuTree" extends="json-default">
+        <action name="getMenuTree" class="treeMenuAction" method="getMenuTree">
+        </action>
+    </package>
+    <include file="test.xml"></include>
+    <include file="users.xml"></include>
+    <include file="buildings.xml"></include>
+    <include file="room.xml"></include>
+    <include file="xueyuan.xml"></include>
+    <include file="kechengxxlb.xml"></include>
+    <include file="FileUpload.xml"></include>
+    <include file="keshi.xml"></include>
+    <include file="kechengxx.xml"></include>
+    <include file="student.xml"></include>
+    <include file="kechengb.xml"></include>
+    <include file="jiaogonglb.xml"></include>
+    <include file="jiaogong.xml"></include>
+    <include file="zhuanye.xml"></include>
+    <include file="jiaoshi.xml"></include>
+    <include file="nianji.xml"></include>
+    <include file="xuesheng.xml"></include>
+    <include file="banji.xml"></include>
+    <include file="skxsxx.xml"></include>
+    <include file="xueqi.xml"></include>
+    <include file="kqxx_bjxx.xml"></include>
+    <include file="kqxx_xscq.xml"></include>
+    <include file="tongji.xml"></include>
+    <include file="luzhiwen.xml"></include>
+    <include file="moban.xml"></include>
+    <include file="moban_ziduan.xml"></include>
+    <include file="sbxx.xml"></include>
+    <include file="youjianlb.xml"></include>
+    <include file="monitongji.xml"></include>
+    <include file="ckxx.xml"></include>
+    <include file="qjxx.xml"></include>
+    <include file="xsxk.xml"></include>
+    <include file="gonggongke.xml"></include>
+    <include file="zwlrlb.xml"></include>
+    <include file="zwlrlbgx.xml"></include>
+    <include file="kaifang.xml"></include>
+    <include file="menu.xml"></include>
+    <include file="message.xml"></include>
+    <include file="fingerprint.xml"></include>
+    <include file="middleware.xml"></include>
 </struts>

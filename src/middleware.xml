@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="middleware" extends="json-default" namespace="/middleware">
+        <global-results>
+            <result name="json" type="json">
+                <param name="root">baseBean</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="wrapPrefix">var result=</param>
+            </result>
+        </global-results>
+        <action name="student" class="middlewareStudentAction" method="queryStudent"></action>
+    </package>
+</struts>
