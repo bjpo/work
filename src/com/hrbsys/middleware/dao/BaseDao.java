@@ -37,17 +37,13 @@ public class BaseDao
         return list;
     }
 
-    public List queryBySql(String sql, Object[] parameters)
+    public List query(String hql)
     {
         Session session = sessionFactory.openSession();
-        Query query = session.createSQLQuery(sql);
+        Query query = session.createQuery(hql);
         List list=new ArrayList();
         try
         {
-            for (int i = 0; i < parameters.length; i++)
-            {
-                query.setParameter(i, parameters[i]);
-            }
             list = query.list();
         } catch (Exception e)
         {
@@ -60,25 +56,6 @@ public class BaseDao
         return list;
     }
 
-    public List queryBySql(String sql)
-    {
-        Session session = sessionFactory.openSession();
-        Query query = session.createSQLQuery(sql);
-        List list=new ArrayList();
-        try
-        {
-            list = query.list();
-        } catch (Exception e)
-        {
-            e.printStackTrace();
-            throw e;
-        } finally
-        {
-            session.close();
-        }
-        return list;
-    }
-    
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }

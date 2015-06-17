@@ -11,10 +11,19 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
+    <bean id="middlewareBaseDao" class="com.hrbsys.middleware.dao.BaseDao" scope="prototype">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
     <bean id="middlewareStudentAction" class="com.hrbsys.middleware.action.StudentAction" scope="prototype">
         <property name="baseDao" ref="middlewareBaseDao"></property>
     </bean>
-    <bean id="middlewareBaseDao" class="com.hrbsys.middleware.dao.BaseDao" scope="prototype">
-        <property name="sessionFactory" ref="sessionFactory"></property>
+    <bean id="middlewareHourAction" class="com.hrbsys.middleware.action.HourAction" scope="prototype">
+        <property name="baseDao" ref="middlewareBaseDao"></property>
+    </bean>
+    <bean id="middlewareTermAction" class="com.hrbsys.middleware.action.TermAction" scope="prototype">
+        <property name="baseDao" ref="middlewareBaseDao"></property>
+    </bean>
+    <bean id="middlewareSquadAction" class="com.hrbsys.middleware.action.SquadAction" scope="prototype">
+        <property name="baseDao" ref="middlewareBaseDao"></property>
     </bean>
 </beans>

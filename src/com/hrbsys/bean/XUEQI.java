@@ -1,66 +1,83 @@
 package com.hrbsys.bean;
+
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 @Entity
-@Table(name="XUEQI")
-public class XUEQI  implements Serializable {
-@Id
-@Column(name="XQ_ID")
-private String XQ_ID;
+@Table(name = "XUEQI")
+public class XUEQI implements Serializable {
 
-public String getXQ_ID() {
- return XQ_ID; 
-}
-public void setXQ_ID(String XQ_ID) { 
-this.XQ_ID = XQ_ID;
-}
-@Column(name="BZ")
-private String BZ;
+    @Id
+    @Column(name = "XQ_ID")
+    private String XQ_ID;
 
-public String getBZ() {
- return BZ; 
-}
-public void setBZ(String BZ) { 
-this.BZ = BZ;
-}
-@Column(name="KSRQ")
-private String KSRQ;
+    public String getXQ_ID() {
+        return XQ_ID;
+    }
 
-public String getKSRQ() {
- return KSRQ; 
-}
-public void setKSRQ(String KSRQ) { 
-this.KSRQ = KSRQ;
-}
-@Column(name="MS")
-private String MS;
+    public void setXQ_ID(String XQ_ID) {
+        this.XQ_ID = XQ_ID;
+    }
+    @Column(name = "BZ")
+    private String BZ;
 
-public String getMS() {
- return MS; 
-}
-public void setMS(String MS) { 
-this.MS = MS;
-}
-@Column(name="JSRQ")
-private String JSRQ;
+    public String getBZ() {
+        return BZ;
+    }
 
-public String getJSRQ() {
- return JSRQ; 
-}
-public void setJSRQ(String JSRQ) { 
-this.JSRQ = JSRQ;
-}
-@Column(name="XQMC")
-private String XQMC;
+    public void setBZ(String BZ) {
+        this.BZ = BZ;
+    }
+    @Column(name = "KSRQ")
+    private String KSRQ;
 
-public String getXQMC() {
- return XQMC; 
-}
-public void setXQMC(String XQMC) { 
-this.XQMC = XQMC;
-}
+    public String getKSRQ() {
+        return KSRQ;
+    }
 
+    public void setKSRQ(String KSRQ) {
+        this.KSRQ = KSRQ;
+    }
+    @Column(name = "MS")
+    private String MS;
+
+    public String getMS() {
+        return MS;
+    }
+
+    public void setMS(String MS) {
+        this.MS = MS;
+    }
+    @Column(name = "JSRQ")
+    private String JSRQ;
+
+    public String getJSRQ() {
+        return JSRQ;
+    }
+
+    public void setJSRQ(String JSRQ) {
+        this.JSRQ = JSRQ;
+    }
+    @Column(name = "XQMC")
+    private String XQMC;
+
+    public String getXQMC() {
+        return XQMC;
+    }
+
+    public void setXQMC(String XQMC) {
+        this.XQMC = XQMC;
+    }
+
+    public XUEQI() {
+    }
+
+    public XUEQI(String XQMC, String KSRQ, String JSRQ) {
+        this.XQMC = XQMC;
+        this.KSRQ = KSRQ;
+        this.JSRQ = JSRQ;
+    }
 }

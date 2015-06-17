@@ -16,6 +16,7 @@ public class Student implements Serializable {
 
     private String name;
     private String number;
+    private String squadName;
 
     public Student() {
     }
@@ -41,5 +42,14 @@ public class Student implements Serializable {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    @Column(name = "BJMC")
+    public String getSquadName() {
+        return squadName;
+    }
+
+    public void setSquadName(String squadName) {
+        this.squadName = squadName;
     }
 }

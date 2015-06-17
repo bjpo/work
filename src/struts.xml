@@ -48,7 +48,6 @@
         <action name="getMenuTree" class="treeMenuAction" method="getMenuTree">
         </action>
     </package>
-    <include file="test.xml"></include>
     <include file="users.xml"></include>
     <include file="buildings.xml"></include>
     <include file="room.xml"></include>

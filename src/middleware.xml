@@ -5,11 +5,13 @@
     <package name="middleware" extends="json-default" namespace="/middleware">
         <global-results>
             <result name="json" type="json">
-                <param name="root">baseBean</param>
+                <param name="root">result</param>
                 <param name="excludeNullProperties">true</param>
-                <param name="wrapPrefix">var result=</param>
             </result>
         </global-results>
-        <action name="student" class="middlewareStudentAction" method="queryStudent"></action>
+        <action name="student" class="middlewareStudentAction" method="query"></action>
+        <action name="hour" class="middlewareHourAction" method="query"></action>
+        <action name="term" class="middlewareTermAction" method="query"></action>
+        <action name="squad" class="middlewareSquadAction" method="query"></action>
     </package>
 </struts>

@@ -1,10 +1,9 @@
 package com.hrbsys.middleware.action;
 
-import com.hrbsys.middleware.bean.BaseBean;
+import com.hrbsys.middleware.bean.Result;
 import com.hrbsys.middleware.constant.BaseConstant;
 import com.hrbsys.middleware.dao.BaseDao;
 import java.util.List;
-
 
 /**
  *
@@ -12,18 +11,25 @@ import java.util.List;
  */
 public class StudentAction
 {
-    private BaseBean baseBean;
+    private Result result;
     private BaseDao baseDao;
     private String name;
+    private String squadName;
 
-    public String queryStudent()
+    public String query()
     {
-        String hql = "select new Student(number) from Student where name = ?";
-        List list = baseDao.query(hql, new Object[]{name});
-        baseBean=new BaseBean();
-        baseBean.setStatus(BaseConstant.successStatus);
-        baseBean.setMessage(BaseConstant.successMessage);
-        baseBean.setData(list);
+        if (name != null)
+        {
+            String hql = "select new Student(number) from Student where name = ?";
+            List list=baseDao.query(hql, new Object[]{name});
+            result=new Result(BaseConstant.successStatus, BaseConstant.successMessage, list);
+        }
+        if (squadName != null)
+        {
+            String hql = "select new Student(number) from Student where squadName = ?";
+            List list=baseDao.query(hql, new Object[]{squadName});
+            result=new Result(BaseConstant.successStatus, BaseConstant.successMessage, list);
+        }
         return BaseConstant.reuslt;
     }
 
@@ -35,7 +41,11 @@ public class StudentAction
         this.name = name;
     }
 
-    public BaseBean getBaseBean() {
-        return baseBean;
+    public void setSquadName(String squadName) {
+        this.squadName = squadName;
+    }
+
+    public Result getResult() {
+        return result;
     }
 }
