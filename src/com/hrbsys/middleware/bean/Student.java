@@ -25,6 +25,11 @@ public class Student implements Serializable {
         this.number = number;
     }
 
+    public Student(String name, String squadName) {
+        this.name = name;
+        this.squadName = squadName;
+    }
+
     @Column(name = "ZSXM")
     public String getName() {
         return name;

@@ -15,6 +15,7 @@ public class StudentAction
     private BaseDao baseDao;
     private String name;
     private String squadName;
+    private String number;
 
     public String query()
     {
@@ -30,6 +31,12 @@ public class StudentAction
             List list=baseDao.query(hql, new Object[]{squadName});
             result=new Result(BaseConstant.successStatus, BaseConstant.successMessage, list);
         }
+        if (number != null)
+        {
+            String hql = "select new Student(name,squadName) from Student where number = ?";
+            List list = baseDao.query(hql, new Object[]{number});
+            result = new Result(BaseConstant.successStatus, BaseConstant.successMessage, list);
+        }
         return BaseConstant.reuslt;
     }
 
@@ -39,6 +46,10 @@ public class StudentAction
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public void setSquadName(String squadName) {
